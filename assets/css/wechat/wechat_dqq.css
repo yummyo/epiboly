@@ -1,0 +1,8 @@
+.hide{
+    display: none;
+}
+.valite_must:before{
+    content: '*';
+    color: red;
+
+}
