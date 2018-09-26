@@ -1,22 +1,23 @@
-var title = "demo测试页面";
+var title = "图书管理";
 var config = {
-    url_page: _dir + "demo.html",
-    url_add: _dir + "demo_add.html",
+    url_page: _dir + "bookManage.html",
+    url_add: _dir + "bookManage_add.html",
     title_page: title + "查询",
     title_list: title + "列表",
     title_add: "添加" + title,
     title_edit: "修改" + title,
-    code_list: "1001001313",
-    code_delete: "1001001312",
-    code_add: "1001001310",
-    code_edit: "1001001311",
-    code_detail: "1001001315",
+    code_list: "/book/query",
+    code_delete: "/book/del",
+    code_add: "/book/add",
+    code_edit: "/book/alter",
+    code_dataUpload: "/book/upload",
+    code_imgUpload: "/book/coverUpload",
     pagination_01: $("#page_01")
 };
 $(document).ready(function () {
-    if (_page == "demo") {
-        // setTitle_01(config['title_list'], config['title_page'], config['url_add']);
-
+    if (_page == "bookManage") {
+        setTitle_01(config['title_list'], config['title_page'], config['url_add']);
+        setDefaultDate($("#startTime"),$("#endTime"))
         //加载事件
         var _trs, _pageSize, _pageCount;
         var setData = function (pIndex, pSize) {
@@ -61,9 +62,50 @@ $(document).ready(function () {
         //查询方法
         // setSearch(config['pagination_01'], loadingAll);
     }
-    else if (_page == "demo_add") {
+    else if (_page == "bookManage_add") {
         var sendObj2 = {};
 
+        var projectfileoptions = {
+            language : 'zh',
+            showCancel:false,
+            showRemove:true,
+            fileActionSettings:{
+                showRemove: true,
+                showZoom: true,
+                showDrag: true,
+                removeIcon: '<i class="glyphicon glyphicon-trash text-danger"></i>',
+                removeClass: 'btn btn-xs btn-default',
+                removeTitle: 'Remove file',
+                uploadIcon: '<i class="glyphicon glyphicon-upload text-info"></i>',
+                uploadClass: 'btn btn-xs btn-default',
+                uploadTitle: 'Upload file',
+                zoomIcon: '<i class="glyphicon glyphicon-zoom-in"></i>',
+                zoomClass: 'btn btn-xs btn-default',
+                zoomTitle: 'View Details',
+                dragIcon: '<i class="glyphicon glyphicon-menu-hamburger"></i>',
+                dragClass: 'text-info',
+                dragTitle: 'Move / Rearrange',
+                dragSettings: {},
+                indicatorNew: '<i class="glyphicon glyphicon-hand-down text-warning"></i>',
+                indicatorSuccess: '<i class="glyphicon glyphicon-ok-sign text-success"></i>',
+                indicatorError: '<i class="glyphicon glyphicon-exclamation-sign text-danger"></i>',
+                indicatorLoading: '<i class="glyphicon glyphicon-hand-up text-muted"></i>',
+                indicatorNewTitle: 'Not uploaded yet',
+                indicatorSuccessTitle: 'Uploaded',
+                indicatorErrorTitle: 'Upload Error',
+                indicatorLoadingTitle: 'Uploading ...'
+            },
+            uploadUrl: "localhost:8893",
+            uploadAsync: true,
+            maxFileCount: 1,
+            showBrowse: false,
+            browseOnZoneClick: true,
+            allowedPreviewTypes : [ 'image' ],
+            allowedFileExtensions : [ 'jpg', 'png', 'gif' ,'jpeg','JPG','PNG','GIF','JPEG'],
+            initialPreviewShowDelete:false
+        }
+        $("#idCardParent").append(`<input id="idCard" name="idCard[]" type="file" class="file hoverImg i1" multiple data-show-upload="false" data-show-caption="true" data-msg-placeholder="请上传图书封面">`)
+        $("#businessParent").append(`<input id="business" name="business[]" type="file" class="file hoverImg i2" multiple data-show-upload="false" data-show-caption="true" data-msg-placeholder="请上传图书">`);
         //初始化
         var PageInit = function () {
             var _fid = $.trim($.request.queryString["fid"]);
@@ -88,6 +130,7 @@ $(document).ready(function () {
                     this.set_msgId(config['code_add']);
                     this.set_fid(0);
                     setTitle_02(config['title_add'],config['url_page']);
+                    $("#idCard,#business").fileinput(projectfileoptions);
                 }
                 else if (_fid != "" && _fstaffNo != "" && _rtype == "edit") {
                     //修改
@@ -118,7 +161,10 @@ $(document).ready(function () {
         $(".validate-form .submit").on("click", function () {
             var _this = $(this);
             if ($(".validate-form").valid()) {
-                sendObj2["pictureList"] = pictureList;
+                sendObj2["name"] = $("#name").val();
+                sendObj2["describe"] = $("#describe").val();
+                sendObj2["coverUrl"] = $("#coverUrl").val();
+                sendObj2["downloadUrl"] = $("#downloadUrl").val();
                 _call(_default.get_msgId(), sendObj2, function (res) {
                     confirm_add_ok(res, config['url_page'], function () {
                         window.location.href = window.location.href;

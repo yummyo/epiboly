@@ -500,3 +500,7 @@ textarea{
 	display: inline;
 	color: #000;
 }
+.valited-required::before{
+	content: '*';
+	color: red;
+}

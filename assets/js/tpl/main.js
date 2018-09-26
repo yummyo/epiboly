@@ -5,7 +5,8 @@ $(function(){
             new setIcon(res).init();
             $("#userName").text(getLocalData("tokenInfo").loginName);
         })
-        new setInfo()
+        // 定时轮询信息接口
+        // new setInfo()
     }else{
         window.location.href = "/index.html";
     }

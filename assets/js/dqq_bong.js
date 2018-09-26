@@ -239,7 +239,6 @@ function getTdOperate(_type, url_add, fid, key, key_field, key1, key_field1) {
     }
 }
 function confirm_add_ok(res, url_back, func) {
-    console.log(res)
     if (res.sta == "ok") {
         top.swal({
             title: res.staInfo + " 是否继续?",
