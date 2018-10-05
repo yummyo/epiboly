@@ -1,34 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bade0931-d32b-4985-b070-b341bc8a4e48" name="Default" comment="代码增加">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/tpl/apk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/tpl/firmware.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/apk.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/apk_add.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/firmware.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/firmware_add.html" />
+    <list default="true" id="bade0931-d32b-4985-b070-b341bc8a4e48" name="Default" comment="加载状态图片增加">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/dqq.css" afterPath="$PROJECT_DIR$/assets/css/dqq.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/fileinput/fileinput.min.css" afterPath="$PROJECT_DIR$/assets/css/fileinput/fileinput.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/JSONFormat.js" afterPath="$PROJECT_DIR$/assets/js/JSONFormat.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/dqq_bong.js" afterPath="$PROJECT_DIR$/assets/js/dqq_bong.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/e.js" afterPath="$PROJECT_DIR$/assets/js/e.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/tpl/bookManage.js" afterPath="$PROJECT_DIR$/assets/js/tpl/bookManage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/tpl/changePsd.js" afterPath="$PROJECT_DIR$/assets/js/tpl/changePsd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/tpl/demo.js" afterPath="$PROJECT_DIR$/assets/js/tpl/demo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/tpl/index.js" afterPath="$PROJECT_DIR$/assets/js/tpl/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/tpl/main.js" afterPath="$PROJECT_DIR$/assets/js/tpl/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/tpl/slideshow.js" afterPath="$PROJECT_DIR$/assets/js/tpl/slideshow.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.html" afterPath="$PROJECT_DIR$/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/bookManage.html" afterPath="$PROJECT_DIR$/tpl/bookManage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/bookManage_add.html" afterPath="$PROJECT_DIR$/tpl/bookManage_add.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/changePsd.html" afterPath="$PROJECT_DIR$/tpl/changePsd.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/demo.html" afterPath="$PROJECT_DIR$/tpl/demo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/demo_add.html" afterPath="$PROJECT_DIR$/tpl/demo_add.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/slideshow.html" afterPath="$PROJECT_DIR$/tpl/slideshow.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/slideshow_add.html" afterPath="$PROJECT_DIR$/tpl/slideshow_add.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -533,7 +507,7 @@
       <workItem from="1538531507884" duration="2258000" />
       <workItem from="1538662751732" duration="3344000" />
       <workItem from="1538706182524" duration="9735000" />
-      <workItem from="1538728849646" duration="3531000" />
+      <workItem from="1538728849646" duration="3835000" />
     </task>
     <task id="LOCAL-00001" summary="代码增加">
       <created>1537976949517</created>
@@ -549,11 +523,25 @@
       <option name="project" value="LOCAL" />
       <updated>1537976970067</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="页面完善">
+      <created>1538732420487</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1538732420488</updated>
+    </task>
+    <task id="LOCAL-00004" summary="加载状态图片增加">
+      <created>1538732479945</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1538732479945</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54788000" />
+    <option name="totallyTimeSpent" value="55092000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -566,11 +554,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15138593" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15138593" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -621,7 +609,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="代码增加" />
-    <option name="LAST_COMMIT_MESSAGE" value="代码增加" />
+    <MESSAGE value="页面完善" />
+    <MESSAGE value="加载状态图片增加" />
+    <option name="LAST_COMMIT_MESSAGE" value="加载状态图片增加" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -851,6 +841,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="481">
           <caret line="497" column="1" lean-forward="true" selection-start-line="497" selection-start-column="1" selection-end-line="497" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
