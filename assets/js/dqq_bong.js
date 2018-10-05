@@ -35,6 +35,7 @@ $(function(){
             $(this).width(($(this).parent().width()*1-($(this).prev().width()*1))*0.95)
         })
     }
+
 })
 //设置默认时间
 function setDefaultDate(_startDate, _endDate) {
@@ -126,25 +127,26 @@ function loadLaydate() {
     }
 }
 function _call(url, send, func, aSynSta) {
-    ajaxcallAPI(url, send, function (res) {
-        top.$('#modal-loading').modal('hide');
-        //loading页面关闭
-        if(url != "/Notice/ChangeReadStatus" && url !="/Notice/SearchNoticeList"){
-            //信息状态修改时不显示发送请求页面
-            ajaxNum--;
-        }
-        if(ajaxNum == 0){
+    // if( url.indexOf('Login') > -1 || checkToken()){
+        ajaxcallAPI(url, send, function (res) {
+            top.$('#modal-loading').modal('hide');
+            //loading页面关闭
+            if(url != "/Notice/ChangeReadStatus" && url !="/Notice/SearchNoticeList"){
+                //信息状态修改时不显示发送请求页面
+                ajaxNum--;
+            }
+            if(ajaxNum == 0){
+                getMainDom("hide");
+            }
+            func(res);
+        }, function () {
             getMainDom("hide");
-        }
-        func(res);
-    }, function () {
-        getMainDom("hide");
-        noticeTimeout();
-    }, function () {
-        getMainDom("hide");
-        noticeError();
-    }, getHeaderObj(), aSynSta);
-
+            noticeTimeout();
+        }, function () {
+            getMainDom("hide");
+            noticeError();
+        }, getHeaderObj(), aSynSta);
+    // }
 }
 //获取主页面元素
 function getMainDom(type){
@@ -187,6 +189,16 @@ function getHeaderObj() {
         return _headerObj;
     }else{
         return null;
+    }
+}
+// 验证token是否过期
+function checkToken(){
+    var _packet_info = getLocalData("_packet_info");
+    if(_packet_info && (_packet_info['time']-new Date().getTime()) > 60*60*1000){
+        return true;
+    }else{
+        d_alert('错误','用户信息已过期，请重新登陆！','error');
+        return false;
     }
 }
 function getUserInfo(t) {
@@ -239,7 +251,7 @@ function getTdOperate(_type, url_add, fid, key, key_field, key1, key_field1) {
     }
 }
 function confirm_add_ok(res, url_back, func) {
-    if (res.sta == "ok") {
+    if (res.code == '1') {
         top.swal({
             title: res.staInfo + " 是否继续?",
             type: "success",
@@ -261,14 +273,8 @@ function confirm_add_ok(res, url_back, func) {
             }
         });
     }
-    else if (res.sta == "err") {
-        d_alert("错误!", res.staInfo, "error");
-    }
-    else if (res.sta == "bzz") {
-        d_alert("错误!", res.staInfo, "error");
-    }
-    else {
-        d_alert("错误!", "请求数据超时，请稍后重试", "error");
+    else{
+        d_alert("错误!", res.info, "error");
     }
 }
 //删除方法
@@ -739,5 +745,74 @@ function setMoreSelect(type,fcollegeNoVal="",fclassNoVal="",fcourseNoVal=""){
                 $("#fformalNo").val(val).change();
             });
         })
+    }
+}
+class setUpload{
+    constructor(DOM,option){
+        this.defaultOption = {
+            language : 'zh',
+            showCancel:false,
+            showRemove:true,
+            fileActionSettings:{
+                showRemove: true,
+                showZoom: true,
+                showDrag: true,
+                removeIcon: '<i class="glyphicon glyphicon-trash text-danger"></i>',
+                removeClass: 'btn btn-xs btn-default',
+                removeTitle: 'Remove file',
+                uploadIcon: '<i class="glyphicon glyphicon-upload text-info"></i>',
+                uploadClass: 'btn btn-xs btn-default',
+                uploadTitle: 'Upload file',
+                zoomIcon: '<i class="glyphicon glyphicon-zoom-in"></i>',
+                zoomClass: 'btn btn-xs btn-default',
+                zoomTitle: 'View Details',
+                dragIcon: '<i class="glyphicon glyphicon-menu-hamburger"></i>',
+                dragClass: 'text-info',
+                dragTitle: 'Move / Rearrange',
+                dragSettings: {},
+                indicatorNew: '<i class="glyphicon glyphicon-hand-down text-warning"></i>',
+                indicatorSuccess: '<i class="glyphicon glyphicon-ok-sign text-success"></i>',
+                indicatorError: '<i class="glyphicon glyphicon-exclamation-sign text-danger"></i>',
+                indicatorLoading: '<i class="glyphicon glyphicon-hand-up text-muted"></i>',
+                indicatorNewTitle: 'Not uploaded yet',
+                indicatorSuccessTitle: 'Uploaded',
+                indicatorErrorTitle: 'Upload Error',
+                indicatorLoadingTitle: 'Uploading ...'
+            },
+            uploadUrl: "",
+            uploadAsync: true,
+            maxFileCount: 1,
+            showBrowse: false,
+            browseOnZoneClick: true,
+            allowedPreviewTypes : [ 'image' ],
+            allowedFileExtensions : [ 'jpg', 'png', 'gif' ,'jpeg','JPG','PNG','GIF','JPEG'],
+            initialPreviewShowDelete:false
+        };
+        this.DOM = DOM;
+        this.option = $.extend(true,{},this.defaultOption,option);
+        this.option.uploadUrl = 'http://47.92.251.237/admin' + this.option.uploadUrl;
+        this.init();
+    }
+    init(){
+        this.joinHtml();
+        this.bindEvent();
+    }
+    joinHtml(){
+        this.DOM.append(`<input name="idCard[]" type="file" class="file hoverImg i1" multiple data-show-upload="false" data-show-caption="true" data-msg-placeholder="请上传图书封面">`)
+    }
+    bindEvent(){
+        let _file = this.DOM.find('[type = file]');
+        _file.fileinput(this.option);
+        //失败提示
+        _file.on('fileerror', function(event, data, msg) {
+            console.log(event, data, msg)
+        });
+        //成功提示
+        _file.on('fileuploaded', function(event, data, msg) {
+            console.log(event, data, msg)
+        });
+        // _file.fileinput('upload', function(event, data, msg) {
+        //     console.log(event, data, msg)
+        // });
     }
 }

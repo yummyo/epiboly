@@ -1,15 +1,15 @@
 "use strict"
 $(function(){
-    if(checkUserInfo()){
-        _call("/User/GetUserMenus",{},(res)=>{
-            new setIcon(res).init();
-            $("#userName").text(getLocalData("tokenInfo").loginName);
-        })
-        // 定时轮询信息接口
-        // new setInfo()
-    }else{
-        window.location.href = "/index.html";
-    }
+    // if(checkUserInfo()){
+    //     _call("/User/GetUserMenus",{},(res)=>{
+    //         new setIcon(res).init();
+    //         $("#userName").text(getLocalData("tokenInfo").loginName);
+    //     })
+    //     // 定时轮询信息接口
+    //     // new setInfo()
+    // }else{
+    //     window.location.href = "/index.html";
+    // }
     $(".Hui-aside").Huifold({
         titCell:'.menu_dropdown dl dt',
         mainCell:'.menu_dropdown dl dd',

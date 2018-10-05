@@ -1,8 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bade0931-d32b-4985-b070-b341bc8a4e48" name="Default" comment="">
+    <list default="true" id="bade0931-d32b-4985-b070-b341bc8a4e48" name="Default" comment="代码增加">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/tpl/apk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/tpl/firmware.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/apk.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/apk_add.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/firmware.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/firmware_add.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/dqq.css" afterPath="$PROJECT_DIR$/assets/css/dqq.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/fileinput/fileinput.min.css" afterPath="$PROJECT_DIR$/assets/css/fileinput/fileinput.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/JSONFormat.js" afterPath="$PROJECT_DIR$/assets/js/JSONFormat.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/dqq_bong.js" afterPath="$PROJECT_DIR$/assets/js/dqq_bong.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/e.js" afterPath="$PROJECT_DIR$/assets/js/e.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/tpl/bookManage.js" afterPath="$PROJECT_DIR$/assets/js/tpl/bookManage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/tpl/changePsd.js" afterPath="$PROJECT_DIR$/assets/js/tpl/changePsd.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/tpl/demo.js" afterPath="$PROJECT_DIR$/assets/js/tpl/demo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/tpl/index.js" afterPath="$PROJECT_DIR$/assets/js/tpl/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/tpl/main.js" afterPath="$PROJECT_DIR$/assets/js/tpl/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/tpl/slideshow.js" afterPath="$PROJECT_DIR$/assets/js/tpl/slideshow.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.html" afterPath="$PROJECT_DIR$/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/bookManage.html" afterPath="$PROJECT_DIR$/tpl/bookManage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/bookManage_add.html" afterPath="$PROJECT_DIR$/tpl/bookManage_add.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/changePsd.html" afterPath="$PROJECT_DIR$/tpl/changePsd.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/demo.html" afterPath="$PROJECT_DIR$/tpl/demo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/demo_add.html" afterPath="$PROJECT_DIR$/tpl/demo_add.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/slideshow.html" afterPath="$PROJECT_DIR$/tpl/slideshow.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/slideshow_add.html" afterPath="$PROJECT_DIR$/tpl/slideshow_add.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,49 +38,54 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.588797">
+    <splitter split-orientation="horizontal" split-proportion="0.4904051">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="slideshow.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tpl/slideshow.html">
+          <file leaf-file-name="firmware.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/tpl/firmware.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-399">
-                  <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="28" />
-                  <folding>
-                    <element signature="n#style#0;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="dqq_bong.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/assets/js/dqq_bong.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="172">
-                  <caret line="237" column="23" lean-forward="false" selection-start-line="237" selection-start-column="23" selection-end-line="237" selection-end-column="23" />
-                  <folding>
-                    <marker date="1537973436793" expanded="true" signature="14856:14862" ph="&amp;nbsp;" />
-                    <marker date="1537973436793" expanded="true" signature="21409:21593" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="bookManage.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tpl/bookManage.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="657">
-                  <caret line="78" column="4" lean-forward="false" selection-start-line="78" selection-start-column="4" selection-end-line="78" selection-end-column="4" />
+                <state relative-caret-position="335">
+                  <caret line="36" column="42" lean-forward="true" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="bookManage_add.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/tpl/bookManage_add.html">
+          <file leaf-file-name="apk.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/tpl/apk.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="49" column="36" lean-forward="false" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+                <state relative-caret-position="269">
+                  <caret line="27" column="100" lean-forward="false" selection-start-line="27" selection-start-column="90" selection-end-line="27" selection-end-column="100" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="apk_add.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/tpl/apk_add.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="539">
+                  <caret line="44" column="109" lean-forward="false" selection-start-line="44" selection-start-column="109" selection-end-line="44" selection-end-column="109" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="firmware_add.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/tpl/firmware_add.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="506">
+                  <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="slideshow.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/tpl/slideshow.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="132">
+                  <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
                   <folding />
                 </state>
               </provider>
@@ -63,8 +94,8 @@
           <file leaf-file-name="slideshow_add.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tpl/slideshow_add.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="308">
-                  <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+                <state relative-caret-position="181">
+                  <caret line="66" column="29" lean-forward="true" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
                   <folding />
                 </state>
               </provider>
@@ -73,14 +104,107 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
-          <file leaf-file-name="bookManage.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/assets/js/tpl/bookManage.js">
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="apk.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/js/tpl/apk.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="154">
-                  <caret line="125" column="12" lean-forward="false" selection-start-line="125" selection-start-column="12" selection-end-line="125" selection-end-column="12" />
+                <state relative-caret-position="858">
+                  <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
                   <folding>
-                    <element signature="e#531#2547#0" expanded="false" />
+                    <marker date="1538731304836" expanded="true" signature="1609:1938" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="dqq_bong.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/js/dqq_bong.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="539">
+                  <caret line="130" column="11" lean-forward="false" selection-start-line="130" selection-start-column="11" selection-end-line="130" selection-end-column="11" />
+                  <folding>
+                    <marker date="1538730764642" expanded="true" signature="15098:15104" ph="&amp;nbsp;" />
+                    <marker date="1538730764642" expanded="true" signature="21651:21835" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="JSONFormat.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/assets/js/JSONFormat.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="462">
+                  <caret line="21" column="28" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="28" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="e.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/js/e.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="176">
+                  <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="335">
+                  <caret line="76" column="68" lean-forward="false" selection-start-line="76" selection-start-column="64" selection-end-line="76" selection-end-column="68" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="slideshow.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/js/tpl/slideshow.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="546">
+                  <caret line="143" column="5" lean-forward="true" selection-start-line="143" selection-start-column="5" selection-end-line="143" selection-end-column="5" />
+                  <folding>
+                    <marker date="1538731221212" expanded="true" signature="1654:2096" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="firmware.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/js/tpl/firmware.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="348">
+                  <caret line="131" column="67" lean-forward="false" selection-start-line="131" selection-start-column="67" selection-end-line="131" selection-end-column="67" />
+                  <folding>
+                    <marker date="1538731073514" expanded="true" signature="1716:2121" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/js/tpl/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="286">
+                  <caret line="22" column="15" lean-forward="false" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="fileinput.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/js/fileinput/fileinput.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="44">
+                  <caret line="2" column="39" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="39" />
+                  <folding>
+                    <marker date="1531135968386" expanded="true" signature="27096:27103" ph="×" />
+                    <marker date="1531135968386" expanded="true" signature="29161:29178" ph="..." />
+                    <marker date="1531135968386" expanded="true" signature="33128:33140" ph="..." />
+                    <marker date="1531135968386" expanded="true" signature="195911:195917" ph="&amp;nbsp;" />
+                    <marker date="1531135968386" expanded="true" signature="197818:197825" ph="×" />
                   </folding>
                 </state>
               </provider>
@@ -92,31 +216,68 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>_ca</find>
-      <find>getMainDom(&quot;#loading&quot;)</find>
-      <find>getMainDom(&quot;#loading&quot;).show()</find>
-      <find>getMainDom(&quot;#loading&quot;).hide()</find>
-      <find>Dom</find>
-      <find>../assets</find>
-      <find>url_add</find>
-      <find>all_date</find>
-      <find>lay</find>
-      <find>ly_date</find>
-      <find>fstartTime</find>
-      <find>setIn</find>
-      <find>setInfo</find>
-      <find>时间</find>
-      <find>vertical</find>
-      <find>demo</find>
-      <find>valited-required</find>
+      <find>../img/loading</find>
+      <find>../img</find>
+      <find>&quot;fcompanyId&quot;: getUserInfo(0).fcompanyId,</find>
+      <find>\n                \&quot;fcompanyId\&quot;\: getUserInfo\(0\)\.fcompanyId\,</find>
+      <find>api_base</find>
+      <find>ajaxcallAPI</find>
+      <find>upload</find>
+      <find>dataInput</find>
+      <find>validate-form</find>
+      <find>userName</find>
+      <find>uploadUrl</find>
+      <find>setCode</find>
+      <find>option</find>
+      <find>token</find>
+      <find>getLocalData</find>
+      <find>checkToken</find>
+      <find>_setTokenInfo</find>
+      <find>headerObj</find>
+      <find>data-rule-required='true'</find>
+      <find>rows=&quot;5&quot;</find>
+      <find>rows=&quot;5&quot;</find>
+      <find>fajaxType</find>
+      <find>downloadUrl</find>
+      <find>apk</find>
+      <find>code</find>
+      <find>firmwareType</find>
+      <find>firmwareUrl</find>
+      <find>describe</find>
+      <find>name</find>
+      <find>version</find>
     </findStrings>
     <replaceStrings>
-      <replace>getMainDom(&quot;show&quot;)</replace>
-      <replace>getMainDom(&quot;hide&quot;)</replace>
-      <replace>/assets</replace>
-      <replace>slideshow</replace>
-      <replace>startTime</replace>
-      <replace>bookManage</replace>
+      <replace>轮播图名称</replace>
+      <replace>id</replace>
+      <replace>图书</replace>
+      <replace>固件类型</replace>
+      <replace>固件版本号</replace>
+      <replace>固件描述</replace>
+      <replace>固件url</replace>
+      <replace>apk管理</replace>
+      <replace>apk</replace>
+      <replace>firmware</replace>
+      <replace>setSearch(config['pagination_01'], loadingAll);</replace>
+      <replace>version</replace>
+      <replace>apk版本号</replace>
+      <replace>apk版本描述</replace>
+      <replace>apkurl</replace>
+      <replace>/assets/images/img</replace>
+      <replace />
+      <replace>required</replace>
+      <replace>rows=&quot;3&quot;</replace>
+      <replace>bookCode</replace>
+      <replace>bookDescribe</replace>
+      <replace>bookName</replace>
+      <replace>固件</replace>
+      <replace>firmwareVersion</replace>
+      <replace>firmwareVersion</replace>
+      <replace>firmwareDescribe</replace>
+      <replace>slidePicName</replace>
+      <replace>slidePicDescribe</replace>
+      <replace>firmwareType</replace>
+      <replace>apkVersion</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -130,22 +291,33 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assets/js/e.js" />
-        <option value="$PROJECT_DIR$/assets/js/JSONFormat.js" />
         <option value="$PROJECT_DIR$/tpl/teacherInfo.html" />
-        <option value="$PROJECT_DIR$/tpl/demo.html" />
         <option value="$PROJECT_DIR$/tpl/demo_add.html" />
-        <option value="$PROJECT_DIR$/assets/js/tpl/slideshow.js" />
-        <option value="$PROJECT_DIR$/tpl/slideshow.html" />
-        <option value="$PROJECT_DIR$/tpl/slideshow_add.html" />
-        <option value="$PROJECT_DIR$/main.html" />
-        <option value="$PROJECT_DIR$/assets/js/tpl/main.js" />
-        <option value="$PROJECT_DIR$/assets/js/dqq_bong.js" />
         <option value="$PROJECT_DIR$/assets/js/tpl/demo.js" />
+        <option value="$PROJECT_DIR$/assets/js/tpl/main.js" />
+        <option value="$PROJECT_DIR$/tpl/demo.html" />
+        <option value="$PROJECT_DIR$/main.html" />
+        <option value="$PROJECT_DIR$/assets/js/tpl/changePsd.js" />
+        <option value="$PROJECT_DIR$/tpl/changePsd.html" />
+        <option value="$PROJECT_DIR$/assets/css/fileinput/fileinput.min.css" />
+        <option value="$PROJECT_DIR$/assets/css/dqq.css" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/tpl/bookManage_add.html" />
+        <option value="$PROJECT_DIR$/assets/js/e.js" />
         <option value="$PROJECT_DIR$/tpl/bookManage.html" />
         <option value="$PROJECT_DIR$/assets/js/tpl/bookManage.js" />
-        <option value="$PROJECT_DIR$/assets/css/dqq.css" />
-        <option value="$PROJECT_DIR$/tpl/bookManage_add.html" />
+        <option value="$PROJECT_DIR$/assets/js/dqq_bong.js" />
+        <option value="$PROJECT_DIR$/tpl/apk_add.html" />
+        <option value="$PROJECT_DIR$/tpl/firmware.html" />
+        <option value="$PROJECT_DIR$/tpl/firmware_add.html" />
+        <option value="$PROJECT_DIR$/assets/js/tpl/firmware.js" />
+        <option value="$PROJECT_DIR$/tpl/slideshow.html" />
+        <option value="$PROJECT_DIR$/tpl/slideshow_add.html" />
+        <option value="$PROJECT_DIR$/assets/js/tpl/slideshow.js" />
+        <option value="$PROJECT_DIR$/tpl/apk.html" />
+        <option value="$PROJECT_DIR$/assets/js/tpl/apk.js" />
+        <option value="$PROJECT_DIR$/assets/js/tpl/index.js" />
+        <option value="$PROJECT_DIR$/assets/js/JSONFormat.js" />
       </list>
     </option>
   </component>
@@ -163,10 +335,13 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="293" />
-    <option name="y" value="140" />
+    <option name="x" value="20" />
+    <option name="y" value="-12" />
     <option name="width" value="1282" />
     <option name="height" value="843" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -183,10 +358,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -199,16 +372,36 @@
               <item name="html" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="html" type="b2602c69:ProjectViewProjectNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="html" type="b2602c69:ProjectViewProjectNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="tpl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="html" type="b2602c69:ProjectViewProjectNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="tpl" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../work/project/前端" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../work/wl/wlwl-logistics-platform" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
@@ -218,10 +411,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\shuguang\Desktop\nginx-1.14.0\html\assets\css" />
-      <recent name="C:\Users\shuguang\Desktop\nginx-1.14.0\html\assets\js" />
       <recent name="C:\Users\shuguang\Desktop\nginx-1.14.0\html\assets\js\tpl" />
       <recent name="C:\Users\shuguang\Desktop\nginx-1.14.0\html\tpl" />
+      <recent name="C:\Users\shuguang\Desktop\nginx-1.14.0\html\assets\css" />
+      <recent name="C:\Users\shuguang\Desktop\nginx-1.14.0\html\assets\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -330,7 +523,17 @@
       <option name="presentableId" value="Default" />
       <updated>1537884248487</updated>
       <workItem from="1537884249790" duration="4193000" />
-      <workItem from="1537970683310" duration="6218000" />
+      <workItem from="1537970683310" duration="6397000" />
+      <workItem from="1538145820764" duration="596000" />
+      <workItem from="1538183107555" duration="1851000" />
+      <workItem from="1538229568299" duration="598000" />
+      <workItem from="1538443456496" duration="6860000" />
+      <workItem from="1538459170233" duration="9814000" />
+      <workItem from="1538481891352" duration="5611000" />
+      <workItem from="1538531507884" duration="2258000" />
+      <workItem from="1538662751732" duration="3344000" />
+      <workItem from="1538706182524" duration="9735000" />
+      <workItem from="1538728849646" duration="3531000" />
     </task>
     <task id="LOCAL-00001" summary="代码增加">
       <created>1537976949517</created>
@@ -339,11 +542,18 @@
       <option name="project" value="LOCAL" />
       <updated>1537976949517</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="代码增加">
+      <created>1537976970067</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1537976970067</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10411000" />
+    <option name="totallyTimeSpent" value="54788000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -357,28 +567,54 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16257995" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15138593" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="856" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -388,17 +624,49 @@
     <option name="LAST_COMMIT_MESSAGE" value="代码增加" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/tpl/bookManage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1716">
+          <caret line="78" column="4" lean-forward="false" selection-start-line="78" selection-start-column="4" selection-end-line="78" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/slideshow_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/bookManage_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1078">
+          <caret line="49" column="36" lean-forward="false" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/tpl/bookManage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1538730737538" expanded="true" signature="1723:2167" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tpl/slideshow.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1628">
           <caret line="74" column="41" lean-forward="false" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="41" />
-          <folding>
-            <element signature="n#style#0;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -414,7 +682,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="23" column="32" lean-forward="true" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -423,8 +690,8 @@
         <state relative-caret-position="10230">
           <caret line="465" column="20" lean-forward="false" selection-start-line="465" selection-start-column="12" selection-end-line="465" selection-end-column="20" />
           <folding>
-            <marker date="1537973436793" expanded="true" signature="14856:14862" ph="&amp;nbsp;" />
-            <marker date="1537973436793" expanded="true" signature="21409:21593" ph="..." />
+            <marker date="1538730764642" expanded="true" signature="15098:15104" ph="&amp;nbsp;" />
+            <marker date="1538730764642" expanded="true" signature="21651:21835" ph="..." />
           </folding>
         </state>
       </provider>
@@ -433,37 +700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding>
-            <marker date="1537973337629" expanded="true" signature="1191:1463" ph="..." />
-            <marker date="1537973337629" expanded="false" signature="1354:1368" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="1369:1437" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="3338:3346" ph="&amp;##xe933;" />
-            <marker date="1537973337629" expanded="true" signature="3473:3494" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="3496:3504" ph="&amp;##xe933;" />
-            <marker date="1537973337629" expanded="true" signature="3637:4211" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="3688:4189" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="3738:4164" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="3795:3875" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="3932:4133" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="4485:4895" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="4548:4857" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="5024:5410" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="5083:5376" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="5471:5976" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="5526:5946" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="6576:7715" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="6610:7688" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="6668:7653" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="6750:7618" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="6809:7542" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="6891:7018" ph="..." />
-            <marker date="1537973337629" expanded="false" signature="7085:7094" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="7095:7499" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="7164:7170" ph="&amp;nbsp;" />
-            <marker date="1537973337629" expanded="true" signature="7170:7176" ph="&amp;nbsp;" />
-            <marker date="1537973337629" expanded="true" signature="7176:7182" ph="&amp;nbsp;" />
-            <marker date="1537973337629" expanded="true" signature="7182:7188" ph="&amp;nbsp;" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -471,22 +707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2134">
           <caret line="97" column="39" lean-forward="true" selection-start-line="97" selection-start-column="39" selection-end-line="97" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/e.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/JSONFormat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="103" column="16" lean-forward="false" selection-start-line="103" selection-start-column="16" selection-end-line="103" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -496,7 +716,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1980">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -504,7 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -512,113 +730,6 @@
     <entry file="file://$PROJECT_DIR$/assets/js/tpl/course.js" />
     <entry file="file://$PROJECT_DIR$/assets/js/tpl/teacherInfo.js" />
     <entry file="file://$PROJECT_DIR$/tpl/teacherInfo.html" />
-    <entry file="file://$PROJECT_DIR$/tpl/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="58" column="28" lean-forward="false" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/demo_add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/tpl/slideshow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" column="32" lean-forward="false" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/slideshow.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-399">
-          <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="28" />
-          <folding>
-            <element signature="n#style#0;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/slideshow_add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/dqq_include.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/tpl/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding>
-            <marker date="1537973337629" expanded="true" signature="1191:1463" ph="..." />
-            <marker date="1537973337629" expanded="false" signature="1354:1368" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="1369:1437" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="3338:3346" ph="&amp;##xe933;" />
-            <marker date="1537973337629" expanded="true" signature="3473:3494" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="3496:3504" ph="&amp;##xe933;" />
-            <marker date="1537973337629" expanded="true" signature="3637:4211" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="3688:4189" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="3738:4164" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="3795:3875" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="3932:4133" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="4485:4895" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="4548:4857" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="5024:5410" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="5083:5376" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="5471:5976" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="5526:5946" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="6576:7715" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="6610:7688" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="6668:7653" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="6750:7618" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="6809:7542" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="6891:7018" ph="..." />
-            <marker date="1537973337629" expanded="false" signature="7085:7094" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="7095:7499" ph="..." />
-            <marker date="1537973337629" expanded="true" signature="7164:7170" ph="&amp;nbsp;" />
-            <marker date="1537973337629" expanded="true" signature="7170:7176" ph="&amp;nbsp;" />
-            <marker date="1537973337629" expanded="true" signature="7176:7182" ph="&amp;nbsp;" />
-            <marker date="1537973337629" expanded="true" signature="7182:7188" ph="&amp;nbsp;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="127" column="30" lean-forward="true" selection-start-line="127" selection-start-column="30" selection-end-line="127" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/dqq_bong.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="237" column="23" lean-forward="false" selection-start-line="237" selection-start-column="23" selection-end-line="237" selection-end-column="23" />
-          <folding>
-            <marker date="1537973436793" expanded="true" signature="14856:14862" ph="&amp;nbsp;" />
-            <marker date="1537973436793" expanded="true" signature="21409:21593" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/tpl/demo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="541">
@@ -631,7 +742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -639,15 +749,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/bookManage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="657">
-          <caret line="78" column="4" lean-forward="false" selection-start-line="78" selection-start-column="4" selection-end-line="78" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -655,19 +756,109 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/echars.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/tpl/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1531135968634" expanded="true" signature="3058:3066" ph="…" />
+            <marker date="1538449229403" expanded="true" signature="1221:1493" ph="..." />
+            <marker date="1538449229403" expanded="false" signature="1384:1398" ph="..." />
+            <marker date="1538449229403" expanded="true" signature="1399:1467" ph="..." />
+            <marker date="1538449229403" expanded="true" signature="3368:3376" ph="&amp;##xe933;" />
+            <marker date="1538449229403" expanded="true" signature="3503:3524" ph="..." />
+            <marker date="1538449229403" expanded="true" signature="3526:3534" ph="&amp;##xe933;" />
+            <marker date="1538449229403" expanded="true" signature="3667:4241" ph="..." />
+            <marker date="1538449229403" expanded="true" signature="3718:4219" ph="..." />
+            <marker date="1538449229403" expanded="true" signature="3768:4194" ph="..." />
+            <marker date="1538449229403" expanded="true" signature="3825:3905" ph="..." />
+            <marker date="1538449229403" expanded="true" signature="3962:4163" ph="..." />
+            <marker date="1538449229403" expanded="true" signature="4515:4925" ph="..." />
+            <marker date="1538449229403" expanded="true" signature="4578:4887" ph="..." />
+            <marker date="1538449229403" expanded="true" signature="5054:5440" ph="..." />
+            <marker date="1538449229403" expanded="true" signature="5113:5406" ph="..." />
+            <marker date="1538449229403" expanded="true" signature="5501:6006" ph="..." />
+            <marker date="1538449229403" expanded="true" signature="5556:5976" ph="..." />
+            <marker date="1538449229403" expanded="true" signature="6606:7745" ph="..." />
+            <marker date="1538449229403" expanded="true" signature="6640:7718" ph="..." />
+            <marker date="1538449229403" expanded="true" signature="6698:7683" ph="..." />
+            <marker date="1538449229403" expanded="true" signature="6780:7648" ph="..." />
+            <marker date="1538449229403" expanded="true" signature="6839:7572" ph="..." />
+            <marker date="1538449229403" expanded="true" signature="6921:7048" ph="..." />
+            <marker date="1538449229403" expanded="false" signature="7115:7124" ph="..." />
+            <marker date="1538449229403" expanded="true" signature="7125:7529" ph="..." />
+            <marker date="1538449229403" expanded="true" signature="7194:7200" ph="&amp;nbsp;" />
+            <marker date="1538449229403" expanded="true" signature="7200:7206" ph="&amp;nbsp;" />
+            <marker date="1538449229403" expanded="true" signature="7206:7212" ph="&amp;nbsp;" />
+            <marker date="1538449229403" expanded="true" signature="7212:7218" ph="&amp;nbsp;" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/demo_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="25" column="56" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="54" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="12" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="88" column="97" lean-forward="false" selection-start-line="88" selection-start-column="97" selection-end-line="88" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/tpl/changePsd.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="57" lean-forward="false" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/fileinput/fileinput.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="11" column="7026" lean-forward="false" selection-start-line="11" selection-start-column="7026" selection-end-line="11" selection-end-column="7026" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/changePsd.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1232">
+          <caret line="56" column="42" lean-forward="false" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/dqq.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="497" column="1" lean-forward="true" selection-start-line="497" selection-start-column="1" selection-end-line="497" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/fileinput/fileinput.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-924">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="44">
+          <caret line="2" column="39" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="39" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
             <marker date="1531135968386" expanded="true" signature="27096:27103" ph="×" />
             <marker date="1531135968386" expanded="true" signature="29161:29178" ph="..." />
             <marker date="1531135968386" expanded="true" signature="33128:33140" ph="..." />
@@ -677,28 +868,165 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/tpl/bookManage.js">
+    <entry file="file://$PROJECT_DIR$/assets/js/dqq_include.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="125" column="12" lean-forward="false" selection-start-line="125" selection-start-column="12" selection-end-line="125" selection-end-column="12" />
-          <folding>
-            <element signature="e#531#2547#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="22">
+          <caret line="1" column="48" lean-forward="false" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/dqq.css">
+    <entry file="file://$PROJECT_DIR$/assets/js/validate/jquery.validate.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="502" column="1" lean-forward="false" selection-start-line="502" selection-start-column="1" selection-end-line="502" selection-end-column="17" />
+        <state relative-caret-position="0">
+          <caret line="0" column="54" lean-forward="true" selection-start-line="0" selection-start-column="54" selection-end-line="0" selection-end-column="101" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tpl/bookManage_add.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="49" column="36" lean-forward="false" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+        <state relative-caret-position="195">
+          <caret line="35" column="41" lean-forward="true" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/tpl/bookManage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="51" column="55" lean-forward="false" selection-start-line="51" selection-start-column="55" selection-end-line="51" selection-end-column="55" />
+          <folding>
+            <marker date="1538730737538" expanded="true" signature="1723:2167" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="76" column="68" lean-forward="false" selection-start-line="76" selection-start-column="64" selection-end-line="76" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/bookManage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="38" column="52" lean-forward="false" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/tpl/firmware.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="131" column="67" lean-forward="false" selection-start-line="131" selection-start-column="67" selection-end-line="131" selection-end-column="67" />
+          <folding>
+            <marker date="1538731073514" expanded="true" signature="1716:2121" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/firmware_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/slideshow.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/tpl/slideshow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="143" column="5" lean-forward="true" selection-start-line="143" selection-start-column="5" selection-end-line="143" selection-end-column="5" />
+          <folding>
+            <marker date="1538731221212" expanded="true" signature="1654:2096" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/slideshow_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="66" column="29" lean-forward="true" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/firmware.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="36" column="42" lean-forward="true" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/apk.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="27" column="100" lean-forward="false" selection-start-line="27" selection-start-column="90" selection-end-line="27" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/tpl/apk.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding>
+            <marker date="1538731304836" expanded="true" signature="1609:1938" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/tpl/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="22" column="15" lean-forward="false" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/dqq_bong.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="130" column="11" lean-forward="false" selection-start-line="130" selection-start-column="11" selection-end-line="130" selection-end-column="11" />
+          <folding>
+            <marker date="1538730764642" expanded="true" signature="15098:15104" ph="&amp;nbsp;" />
+            <marker date="1538730764642" expanded="true" signature="21651:21835" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/e.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/JSONFormat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="28" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/apk_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="44" column="109" lean-forward="false" selection-start-line="44" selection-start-column="109" selection-end-line="44" selection-end-column="109" />
           <folding />
         </state>
       </provider>

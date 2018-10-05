@@ -1,5 +1,3 @@
-	var api_base=getApiBase();
-
 	function getApiBase(){
 		var curServerPath=window.document.location.href;
 		if(curServerPath.indexOf('test.gjd8.com')>-1){
@@ -14,9 +12,12 @@
 		}
 		var serverPath=curServerPath.substring(0,pos);
 		return serverPath;
-
 	}
-
+    var api_base=getApiBase();
+    //本地跨域代理
+    // api_base += "/apis/admin";
+    //生产环境
+    api_base = "http://47.92.251.237/admin";
 
 	function ajaxcallAPI(url,sendObj,onSuccess,onTimeout,onError,headerObj,aSynSta){
 		//加载框
@@ -30,9 +31,15 @@
 		if(tokenInfo){
             sendObj["fusername"] = tokenInfo['loginName'];
 		}
-		window.callAPI(
+		let ajaxType = 'POST';
+		console.log(sendObj)
+        if(sendObj['ajaxType']){
+            ajaxType = sendObj['ajaxType'];
+            delete sendObj['ajaxType'];
+        }
+        window.callAPI(
 			api_base+url,
-			"POST",
+            ajaxType,
 			sendObj,
 			onSuccess,
 			onTimeout,

@@ -504,3 +504,10 @@ textarea{
 	content: '*';
 	color: red;
 }
+body{
+	border: 1px solid transparent;
+}
+/*分页居中*/
+.pagination_parent{
+	text-align: center;
+}

@@ -9,13 +9,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="renderer" content="webkit">
 	<link href='/assets/css/boot/bootstrap.min.css' media='all' rel='stylesheet' type='text/css' />
-	<link href="/assets/css/dqq.css" rel="stylesheet">
 	<link href='/assets/css/fileinput/fileinput.min.css' media='all' rel='stylesheet' type='text/css' />
-	<link rel="stylesheet" href="/assets/css/select2/select2.min.css">
+	<link href="/assets/css/dqq.css" rel="stylesheet">
 <link href="//at.alicdn.com/t/font_574298_n9u0vc6lkp.css" rel="stylesheet">
 	<script>
-        //测试页面
-		var _page="slideshow_add";
+        //图书增加
+		var _page="firmware_add";
 	</script>
 </head>
 <body class="inner_body" id="all_date">
@@ -33,51 +32,38 @@
 				<div class="panel-heading d_title">标题</div>
 				<div class="panel-body">
 					<form class="form validate-form" onsubmit="return false;">
+
 						<div class="row">
 							<div class="col-sm-3">
 								<div class="form-group">
-									<label class='control-label valited-required' for="name">轮播图名称</label>
-									<input type='text' class="form-control" id="name" name="name" placeholder="请输入轮播图名称" title="请输入轮播图名称" />
+									<label class='control-label valited-required' for="firmwareType">固件类型</label>
+									<input type='text' class="form-control" id="firmwareType" name="firmwareType" placeholder="请输入固件类型" title="请输入固件类型" />
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="form-group">
-									<label class='control-label valited-required' for="clickUrl">点击跳转的url</label>
-									<input type='text' class="form-control" id="clickUrl" name="clickUrl" placeholder="请输入点击跳转的url" title="请输入点击跳转的url" />
+									<label class='control-label valited-required' for="firmwareVersion">固件版本号</label>
+									<input type='text' class="form-control" id="firmwareVersion" name="firmwareVersion" placeholder="请输入固件版本号" title="请输入固件版本号" />
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="form-group">
-									<label class='control-label valited-required' for="url">url</label>
-									<input type='text' class="form-control" id="url" name="url" placeholder="请上传轮播图" title="请上传轮播图" />
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="form-group">
-									<label class='control-label valited-required' for="isShow">是否展示</label>
-									<div>
-										<select name="isShow" class="select2" id="isShow">
-											<option value="0">不展示</option>
-											<option value="1">展示</option>
-										</select>
-									</div>
+									<label class='control-label valited-required' for="firmwareUrl">固件url</label>
+									<input type='text' class="form-control" id="firmwareUrl" name="firmwareUrl" placeholder="请输入固件url" title="请输入固件url" />
 								</div>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-sm-12">
 								<div class="form-group">
-									<label class='control-label valited-required' for="slidePicDescribe">轮播图描述</label>
-									<textarea name="slidePicDescribe" id="slidePicDescribe" cols="30" rows="3" placeholder="请输入轮播图描述"></textarea>
+									<label class='control-label valited-required' for="firmwareDescribe">固件描述</label>
+									<textarea name="firmwareDescribe" id="firmwareDescribe" cols="30" rows="3" placeholder="请输入固件描述"></textarea>
 								</div>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-lg-6">
 								<div id="idCardParent"></div>
-							</div>
-							<div class="col-lg-6">
-								<div id="idCardParent2"></div>
 							</div>
 						</div>
 						<div class="text-center">
@@ -90,10 +76,9 @@
 		<div class="dqq_blank"></div>
 	</div>
 	<script src='/assets/js/dqq_include.js' type='text/javascript'></script>
-	<script src="/assets/js/select2/select2.min.js"></script>
 	<script src='/assets/js/boot/bootstrap.min.js' type='text/javascript'></script>
 	<script src="/assets/js/fileinput/fileinput.js"></script>
 	<script src="/assets/js/fileinput/locales/zh.js"></script>
-	<script src='/assets/js/tpl/slideshow.js' type='text/javascript'></script>
+	<script src='/assets/js/tpl/firmware.js' type='text/javascript'></script>
 </body>
 </html>

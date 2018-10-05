@@ -24,7 +24,6 @@ $(document).ready(function () {
             pSize = pSize || 20;
             var pageSetBody = { "pageNo": pIndex, "pageSize": pSize };
             var sendObj = {
-                "fcompanyId": getUserInfo(0).fcompanyId,
                 "frealName": $("#srealName").val(),
                 "pageSetBody": pageSetBody
             };
@@ -59,7 +58,7 @@ $(document).ready(function () {
         // loadingAll();
 
         //查询方法
-        // setSearch(config['pagination_01'], loadingAll);
+        setSearch(config['pagination_01'], loadingAll);
     }
     else if (_page == "demo_add") {
         var sendObj2 = {};

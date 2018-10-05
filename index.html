@@ -62,13 +62,22 @@
             <div class="form-group">
                 <label for="userName" class="col-sm-3  control-label">姓名</label>
                 <div class="col-sm-7">
-                    <input type="text" class="form-control" id="userName" placeholder="用户姓名" title="请输入用户姓名" data-rule-required='true'>
+                    <input type="text" class="form-control" id="userName" placeholder="用户姓名" title="请输入用户姓名"  required>
                 </div>
             </div>
             <div class="form-group">
-                <label for="userName" class="col-sm-3 control-label">密码</label>
+                <label for="userPwd" class="col-sm-3 control-label">密码</label>
                 <div class="col-sm-7">
-                    <input type="password" class="form-control" id="userPwd" placeholder="用户密码" title="请输入用户密码" data-rule-required='true'>
+                    <input type="password" class="form-control" id="userPwd" placeholder="用户密码" title="请输入用户密码"  required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="code" class="col-sm-3 control-label">验证码</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="code" placeholder="验证码" title="请输入验证码"  required>
+                </div>
+                <div class="col-sm-3">
+                    <div class="img_code">验证码</div>
                 </div>
             </div>
             <div class="form-group">

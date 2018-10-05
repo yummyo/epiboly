@@ -6,21 +6,24 @@ $(function(){
             $("#iframeCanvas")[0].contentWindow.inputChange($(this).val())
         })
     })
+    setCode();
+    $("#code").on('focus',function(){
+        setCode();
+    })
     //提交事件
     $(".validate-form .submit").on("click",function(){
-        $(".inputBody").addClass("test");
         if($(".validate-form").valid()){
+            $(".inputBody").addClass("test");
             let sendObj = {
                 "username" : $("#userName").val(),
                 "password" : $("#userPwd").val(),
+                "code" : $("#code").val(),
+                "random" : $(".img_code img").attr('random'),
             };
-            _call("/Login",sendObj,function(res){
-                console.log(res.sta)
-                if(res.sta == "ok"){
-                    _setTokenInfo(res.resultBody.frealName,res.resultBody.token,$("#userName").val());
+            _call("/login",sendObj,function(res){
+                if(res.code == "1"){
                     window.location.href = "/main.html";
-                }else if(res.sta == "err"){
-
+                }else{
                     swal({
                         "title":"错误",
                         "text" : res.staInfo ,
@@ -35,20 +38,13 @@ $(function(){
                     // d_alert("错误",res.staInfo,"error");
                 }
             })
-        }else{
-            $(".inputBody").removeClass("test");
         }
     })
 })
-function _setTokenInfo(_frealName,_packet_token,_loginName){
-    if( _frealName &&_packet_token && _loginName){
-        var _storage=window.localStorage;
-        var jsonObj=new Object();
-        jsonObj["realName"]=_frealName;
-        jsonObj["packet_token"]=_packet_token;
-        jsonObj["loginName"]=_loginName;
-        jsonObj.fdatetime=new Date().getTime();
-        var objString=JSON.stringify(jsonObj);
-        _storage.setItem("tokenInfo",objString);
-    }
+//获取验证码
+function setCode(){
+    var _random = new Date().getTime();
+    var _src = api_base + "/code?random=" + _random;
+    $(".img_code").html("<img src='" + _src + "' width='100' height='38' onclick='setCode();' random='" + _random + "' />");
+    console.log(_random)
 }

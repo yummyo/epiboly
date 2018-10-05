@@ -12,8 +12,8 @@
 	<link href="/assets/css/dqq.css" rel="stylesheet">
 <link href="//at.alicdn.com/t/font_574298_n9u0vc6lkp.css" rel="stylesheet">
 	<script>
-        //图书管理
-		var _page="bookManage";
+        //apk管理
+		var _page="apk";
 	</script>
 </head>
 <body class="inner_body" id="all_date">
@@ -24,14 +24,8 @@
 				<div class="row">
 					<div class="col-sm-3">
 						<div class="form-group">
-							<label class='control-label' for="bookCode">图书编码</label>
-							<input type='text' class="form-control" id="bookCode" name="bookCode" placeholder="请输入图书编码" title="请输入图书编码" />
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="form-group">
-							<label class='control-label' for="bookName">图书名称</label>
-							<input type='text' class="form-control" id="bookName" name="bookName" placeholder="请输入图书名称" title="请输入图书名称"/>
+							<label class='control-label' for="apkVersion">apk版本</label>
+							<input type='text' class="form-control" id="apkVersion" name="apkVersion" placeholder="请输入固件类型" title="请输入固件类型" />
 						</div>
 					</div>
 					<div class="col-sm-3">
@@ -63,11 +57,9 @@
 					<thead>
 					<tr>
 						<th>序号</th>
-						<th>图书编码</th>
-						<th>图书名称</th>
-						<th>图书封面</th>
-						<th>下载</th>
-						<th>图书描述</th>
+						<th>apk版本</th>
+						<th>apk版本描述</th>
+						<th>apkUrl</th>
 						<th>操作</th>
 					</tr>
 					</thead>
@@ -75,7 +67,7 @@
 					</tbody>
 				</table>
 				<!--放置分页数据-->
-				<div class="pagination_parent">
+				<div>
 					<div id="page_01" class="m-pagination"></div>
 				</div>
 			</div>
@@ -84,6 +76,6 @@
 
 	<script src='/assets/js/dqq_include.js' type='text/javascript'></script>
 	<script src='/assets/js/boot/bootstrap.min.js' type='text/javascript'></script>
-	<script src='/assets/js/tpl/bookManage.js' type='text/javascript'></script>
+	<script src='/assets/js/tpl/apk.js' type='text/javascript'></script>
 </body>
 </html>

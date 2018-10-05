@@ -18,10 +18,10 @@ $(function(){
     $(".submit").click(()=>{
         if ($(".validate-form").valid()) {
             let sendObj = {
-                "oldPassword" : $("#oldPassword").val(),
-                "newPassword" : $("#newPassword").val()
+                "oldpwd" : $("#oldPassword").val(),
+                "newpwd" : $("#newPassword").val()
             }
-            _call("/User/ChangePassword",{"msgBody":sendObj},res => {
+            _call("/user/alterpwd",{"msgBody":sendObj},res => {
                 if(res.sta == "ok"){
                     d_alert("成功",res.staInfo,"success",()=>{
                         window.location.href = window.location.href;
@@ -29,7 +29,6 @@ $(function(){
                 }else{
                     d_alert("错误",res.staInfo,"error")
                 }
-
             })
         }
     })

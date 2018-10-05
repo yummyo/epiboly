@@ -10,6 +10,7 @@
     <meta name="renderer" content="webkit">
     <link href='/assets/css/boot/bootstrap.min.css' media='all' rel='stylesheet' type='text/css' />
 	<link href="/assets/css/dqq.css" rel="stylesheet">
+<link href="//at.alicdn.com/t/font_574298_n9u0vc6lkp.css" rel="stylesheet">
 	<script>
         //轮播图管理
 		var _page="slideshow";
@@ -23,8 +24,20 @@
 				<div class="row">
 					<div class="col-sm-3">
 						<div class="form-group">
-							<label class='control-label' for="fdispatchOrderNo">运单号</label>
-							<input type='text' class="form-control" id="fdispatchOrderNo" name="fdispatchOrderNo" placeholder="请输入运单号" title="运单号长度7-10位" data-rule-minlength="7" data-rule-maxlength="10" />
+							<label class='control-label' for="slidePicName">轮播图名称</label>
+							<input type='text' class="form-control" id="slidePicName" name="slidePicName" placeholder="请输入轮播图名称" title="请输入轮播图名称"/>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="form-group">
+							<label class='control-label' for="startTime">开始时间</label>
+							<input type="text" class="form-control ly_date" id="startTime" name="startTime" readonly>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="form-group">
+							<label class='control-label' for="endTime">开始时间</label>
+							<input type="text" class="form-control ly_date" id="endTime" name="endTime" readonly>
 						</div>
 					</div>
 					<div class="col-sm-3 col-sm-offset-6">
@@ -43,9 +56,13 @@
 				<table class='data-table table table-bordered table-striped table-hover' cellspacing="0" width="100%" id="table_01">
 					<thead>
 					<tr>
-						<th>创建日期</th>
-						<th>发货站点</th>
-						<th>提货站点</th>
+						<th>序号</th>
+						<th>轮播图名称</th>
+						<th>轮播图描述</th>
+						<th>轮播图url</th>
+						<th>点击跳转url</th>
+						<th>是否展示</th>
+						<th>操作</th>
 					</tr>
 					</thead>
 					<tbody style="max-height: 100px">
