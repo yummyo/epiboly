@@ -27,8 +27,8 @@ $(document).ready(function () {
                 "slidePicName": $("#slidePicName").val(),
                 "startTime": $("#startTime").val(),
                 "endTime": $("#endTime").val(),
-                "pageSetBody": pageSetBody
             };
+            $.extend(sendObj,pageSetBody);
             _call(config['code_list'], sendObj, function (res) {
                 _trs = "";
                 if (!res.msgBody) {
@@ -39,7 +39,7 @@ $(document).ready(function () {
                 else {
                     _pageSize = res.msgBody.pageOutBody.pageSize;
                     _pageCount = res.msgBody.pageOutBody.count;
-                    $.each(res.msgBody.pageOutBody.pageObjBody, function (i, v) {
+                    $.each(res.body, function (i, v) {
                         _trs = _trs + `<tr>
                             <td>${i+1}</td>
                             <td>${v['slidePicName']}</td>
@@ -50,6 +50,7 @@ $(document).ready(function () {
                             <td>${getTdOperate(6, config['url_add'], v.id, "id", v.id)}</td>
                         </tr>`;
                     });
+                    setPageData(res.body);
                 }
                 $("#table_01 tbody").html(_trs);
 
@@ -97,8 +98,7 @@ $(document).ready(function () {
                     this.set_msgId(config['code_add']);
                     this.set_fid(0);
                     setTitle_02(config['title_add'],config['url_page']);
-                    new setUpload($("#idCardParent"));
-                    new setUpload($("#idCardParent2"));
+                    new setUpload($("#idCardParent"),{'uploadUrl':config['code_upload'],"urlDom":$("#apkurl")});
                 }
                 else if (_fid != "" && _fstaffNo != "" && _rtype == "edit") {
                     //修改
@@ -106,18 +106,11 @@ $(document).ready(function () {
                     this.set_fid(_fid);
                     setTitle_02(config['title_edit'],config['url_page']);
                     sendObj2['fid'] = _fid;
-
-                    //加载数据
-                    var sendObj = {
-                        "fstaffNo": $.trim(_fstaffNo)
-                    };
-                    _call(config['code_detail'], sendObj, function (res) {
-                        if (res.msgBody) {
-                            var _v = res.msgBody;
-                            var formObj = new Form();
-                            formObj.init(_v);
-                        }
-                    });
+                    if (getPageData(_fstaffNo)) {
+                        var _v = getPageData(_fstaffNo);
+                        var formObj = new Form();
+                        formObj.init(_v);
+                    }
                 }
 
             }

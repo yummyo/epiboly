@@ -41,7 +41,7 @@ $(document).ready(function () {
                 else {
                     _pageSize = res.msgBody.pageOutBody.pageSize;
                     _pageCount = res.msgBody.pageOutBody.count;
-                    $.each(res.msgBody.pageOutBody.pageObjBody, function (i, v) {
+                    $.each(res.body, function (i, v) {
                         _trs = _trs + `<tr>
                             <td>${i+1}</td>
                             <td>${v['bookCode']}</td>
@@ -52,6 +52,7 @@ $(document).ready(function () {
                             <td>${getTdOperate(6, config['url_add'], v.id, "id", v.id)}</td>
                         </tr>`;
                     });
+                    setPageData(res.body);
                 }
                 $("#table_01 tbody").html(_trs);
 
@@ -98,8 +99,8 @@ $(document).ready(function () {
                     this.set_msgId(config['code_add']);
                     this.set_fid(0);
                     setTitle_02(config['title_add'],config['url_page']);
-                    new setUpload($("#idCardParent"),{'uploadUrl':config['code_dataUpload']});
-                    new setUpload($("#businessParent"),{'uploadUrl':config['code_imgUpload']})
+                    new setUpload($("#idCardParent"),{'uploadUrl':config['code_dataUpload'],"urlDom":$("#coverUrl"),'title':"封面"});
+                    new setUpload($("#businessParent"),{'uploadUrl':config['code_imgUpload'],"urlDom":$("#downloadUrl")})
                 }
                 else if (_fid != "" && _fstaffNo != "" && _rtype == "edit") {
                     //修改
@@ -108,17 +109,11 @@ $(document).ready(function () {
                     setTitle_02(config['title_edit'],config['url_page']);
                     sendObj2['fid'] = _fid;
 
-                    //加载数据
-                    var sendObj = {
-                        "id": $.trim(_fstaffNo)
-                    };
-                    _call(config['code_detail'], sendObj, function (res) {
-                        if (res.msgBody) {
-                            var _v = res.msgBody;
-                            var formObj = new Form();
-                            formObj.init(_v);
-                        }
-                    });
+                    if (getPageData(_fstaffNo)) {
+                        var _v = getPageData(_fstaffNo);
+                        var formObj = new Form();
+                        formObj.init(_v);
+                    }
                 }
 
             }

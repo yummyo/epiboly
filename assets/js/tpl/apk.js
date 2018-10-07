@@ -1,4 +1,4 @@
-var title = "apk管理";
+var title = "apk";
 var config = {
     url_page: _dir + "apk.html",
     url_add: _dir + "apk_add.html",
@@ -27,8 +27,8 @@ $(document).ready(function () {
                 "apkVersion": $("#apkVersion").val(),
                 "startTime": $("#startTime").val(),
                 "endTime": $("#endTime").val(),
-                "pageSetBody": pageSetBody
             };
+            $.extend(sendObj,pageSetBody);
             _call(config['code_list'], sendObj, function (res) {
                 _trs = "";
                 if (!res.msgBody) {
@@ -39,15 +39,16 @@ $(document).ready(function () {
                 else {
                     _pageSize = res.msgBody.pageOutBody.pageSize;
                     _pageCount = res.msgBody.pageOutBody.count;
-                    $.each(res.msgBody.pageOutBody.pageObjBody, function (i, v) {
+                    $.each(res.body, function (i, v) {
                         _trs = _trs + `<tr>
                             <td>${i+1}</td>
                             <td>${v['apkVersion']}</td>
-                            <td>${v['describe']}</td>
+                            <td>${v['apkDescribe']}</td>
                             <td>${v['apkUrl']}</td>
                             <td>${getTdOperate(6, config['url_add'], v.id, "id", v.id)}</td>
                         </tr>`;
                     });
+                    setPageData(res.body);
                 }
                 $("#table_01 tbody").html(_trs);
 
@@ -94,7 +95,7 @@ $(document).ready(function () {
                     this.set_msgId(config['code_add']);
                     this.set_fid(0);
                     setTitle_02(config['title_add'],config['url_page']);
-                    new setUpload($("#idCardParent"));
+                    new setUpload($("#idCardParent"),{});
                 }
                 else if (_fid != "" && _fstaffNo != "" && _rtype == "edit") {
                     //修改
@@ -102,18 +103,11 @@ $(document).ready(function () {
                     this.set_fid(_fid);
                     setTitle_02(config['title_edit'],config['url_page']);
                     sendObj2['fid'] = _fid;
-
-                    //加载数据
-                    var sendObj = {
-                        "fstaffNo": $.trim(_fstaffNo)
-                    };
-                    _call(config['code_detail'], sendObj, function (res) {
-                        if (res.msgBody) {
-                            var _v = res.msgBody;
-                            var formObj = new Form();
-                            formObj.init(_v);
-                        }
-                    });
+                    if (getPageData(_fstaffNo)) {
+                        var _v = getPageData(_fstaffNo);
+                        var formObj = new Form();
+                        formObj.init(_v);
+                    }
                 }
 
             }
@@ -125,11 +119,9 @@ $(document).ready(function () {
         $(".validate-form .submit").on("click", function () {
             var _this = $(this);
             if ($(".validate-form").valid()) {
-                sendObj2["code"] = $("#code").val();
-                sendObj2["name"] = $("#name").val();
-                sendObj2["describe"] = $("#describe").val();
-                sendObj2["coverUrl"] = $("#coverUrl").val();
-                sendObj2["downloadUrl"] = $("#downloadUrl").val();
+                sendObj2["apkVersion"] = $("#apkVersion").val();
+                sendObj2["apkUrl"] = $("#apkUrl").val();
+                sendObj2["apkDescribe"] = $("#apkDescribe").val();
                 _call(_default.get_msgId(), sendObj2, function (res) {
                     confirm_add_ok(res, config['url_page'], function () {
                         window.location.href = window.location.href;

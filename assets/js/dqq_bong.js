@@ -127,7 +127,11 @@ function loadLaydate() {
     }
 }
 function _call(url, send, func, aSynSta) {
-    // if( url.indexOf('Login') > -1 || checkToken()){
+    console.log(url)
+    console.log(url.indexOf('login'))
+    if( url.indexOf('login') > -1 || checkToken()){
+        let _token = getLocalData("_packet_info")['token'] || '';
+        $.extend(send,{'token':_token})
         ajaxcallAPI(url, send, function (res) {
             top.$('#modal-loading').modal('hide');
             //loading页面关闭
@@ -146,7 +150,7 @@ function _call(url, send, func, aSynSta) {
             getMainDom("hide");
             noticeError();
         }, getHeaderObj(), aSynSta);
-    // }
+    }
 }
 //获取主页面元素
 function getMainDom(type){
@@ -194,10 +198,12 @@ function getHeaderObj() {
 // 验证token是否过期
 function checkToken(){
     var _packet_info = getLocalData("_packet_info");
-    if(_packet_info && (_packet_info['time']-new Date().getTime()) > 60*60*1000){
+    if(_packet_info && (new Date().getTime() - _packet_info['time']) < 60*60*1000){
         return true;
     }else{
-        d_alert('错误','用户信息已过期，请重新登陆！','error');
+        d_alert('错误','用户信息已过期，请重新登陆！','error',function () {
+            top.window.location.href = 'index.html';
+        });
         return false;
     }
 }
@@ -253,7 +259,7 @@ function getTdOperate(_type, url_add, fid, key, key_field, key1, key_field1) {
 function confirm_add_ok(res, url_back, func) {
     if (res.code == '1') {
         top.swal({
-            title: res.staInfo + " 是否继续?",
+            title: res.info + " 是否继续?",
             type: "success",
             showCancelButton: true,
             cancelButtonText: "不了",
@@ -791,6 +797,7 @@ class setUpload{
         this.DOM = DOM;
         this.option = $.extend(true,{},this.defaultOption,option);
         this.option.uploadUrl = 'http://47.92.251.237/admin' + this.option.uploadUrl;
+        // this.option.uploadUrl = 'http://www.donzch.com:8080/upload/image';
         this.init();
     }
     init(){
@@ -798,10 +805,11 @@ class setUpload{
         this.bindEvent();
     }
     joinHtml(){
-        this.DOM.append(`<input name="idCard[]" type="file" class="file hoverImg i1" multiple data-show-upload="false" data-show-caption="true" data-msg-placeholder="请上传图书封面">`)
+        this.DOM.append(`<input name="file" type="file" class="file hoverImg i1" multiple data-show-upload="false" data-show-caption="true" data-msg-placeholder="请上传${this.option.title ? this.option.title : title}">`)
     }
     bindEvent(){
-        let _file = this.DOM.find('[type = file]');
+        let that = this,
+            _file = this.DOM.find('[type = file]');
         _file.fileinput(this.option);
         //失败提示
         _file.on('fileerror', function(event, data, msg) {
@@ -809,10 +817,26 @@ class setUpload{
         });
         //成功提示
         _file.on('fileuploaded', function(event, data, msg) {
-            console.log(event, data, msg)
+            if(that.option.urlDom && that.option.urlDom.length > 0){
+                that.option.urlDom.val(data['response']['downloadUrl'])
+            }
         });
         // _file.fileinput('upload', function(event, data, msg) {
         //     console.log(event, data, msg)
         // });
+    }
+}
+//设置查询数据
+function setPageData(data){
+    let _storge = getLocalData('pageData');
+    if(_storge){
+        _storge[page] = data;
+    }
+}
+//根据id获取对应税局
+function getPageData(id){
+    let _storge = getLocalData('pageData');
+    if(_storge && _storge[page.split("_")[0]]){
+        return _storge[page.split("_")[0]][id]
     }
 }

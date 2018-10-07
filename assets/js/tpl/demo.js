@@ -37,7 +37,7 @@ $(document).ready(function () {
                 else {
                     _pageSize = res.msgBody.pageOutBody.pageSize;
                     _pageCount = res.msgBody.pageOutBody.count;
-                    $.each(res.msgBody.pageOutBody.pageObjBody, function (i, v) {
+                    $.each(res.body, function (i, v) {
                         _trs = _trs + "<tr><td>" + (i + 1) + "</td><td>" + v.frealName + "</td><td>" + v.fmobile + "</td><td>" + v.fidcardNo + "</td><td>" + v.flicenseTypeName + "</td><td>" + v.fstaffTypeName + "</td><td>" + v.fdepartmentNames + "</td><td>" + getFormatDate(1, v.fzgzdqDate) + "</td><td>" + getText_fisAbled(v.fisAbled, 1) + "</td><td>" + getTdOperate(6, config['url_add'], v.fid, "fstaffNo", v.fstaffNo) + "</td></tr>";
                     });
                 }
