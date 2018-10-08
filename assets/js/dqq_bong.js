@@ -718,11 +718,11 @@ class setClassTable{
 //检测是否通过正常登陆进入页面
 function checkUserInfo(){
     let dataTime = new Date().getTime(),
-        oldTime = getLocalData("tokenInfo").fdatetime;
-    if((dataTime*1 - oldTime*1) > (60*60*2*1000)){
-        return false;
-    }else{
+        oldTime = getLocalData("_packet_info").time;
+    if(dataTime && oldTime && (dataTime*1 - oldTime*1) < (60*60*2*1000)){
         return true;
+    }else{
+        return false;
     }
 }
 //级联select绑定

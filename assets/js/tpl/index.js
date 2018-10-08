@@ -14,7 +14,7 @@ $(function(){
     $(".validate-form .submit").on("click",function(){
         login();
     })
-    $("#code").on("keydown",(e)=>{
+    $(".validate-form").on("keydown",(e)=>{
         if(e.keyCode == '13' || e.keyCode == '108'){
             login();
         }
@@ -28,7 +28,6 @@ function setCode(){
     $(".img_code img").load(function(){
         $("#code").focus();
     })
-    console.log(_random)
 }
 function login(){
     if($(".validate-form").valid()){
@@ -53,10 +52,14 @@ function login(){
                 }).then(function (isConfirm) {
                     if (isConfirm === true) {
                         $(".inputBody").removeClass("test");
+                        setCode();
                     }
                 });
                 // d_alert("错误",res.staInfo,"error");
             }
         })
     }
+    $.ajax({
+        'url':'http://47.92.251.237/admin/apk/query'
+    })
 }

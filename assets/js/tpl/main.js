@@ -1,15 +1,11 @@
 "use strict"
 $(function(){
-    // if(checkUserInfo()){
-    //     _call("/User/GetUserMenus",{},(res)=>{
-    //         new setIcon(res).init();
-    //         $("#userName").text(getLocalData("tokenInfo").loginName);
-    //     })
-    //     // 定时轮询信息接口
-    //     // new setInfo()
-    // }else{
-    //     window.location.href = "/index.html";
-    // }
+    if(!checkUserInfo()){
+        d_alert('错误',"用户信息已过期!",'error');
+        window.location.href = "/index.html";
+    }else{
+
+    }
     //每页查询data数据存放
     window.localStorage.setItem('pageData',"");
     $(".Hui-aside").Huifold({
