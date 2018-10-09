@@ -110,6 +110,7 @@ $(document).ready(function () {
                         var _v = getPageData(_fstaffNo);
                         var formObj = new Form();
                         formObj.init(_v);
+                        new setUpload($("#idCardParent"),{"urlDom":$("#firmwareUrl")});
                     }
                 }
 

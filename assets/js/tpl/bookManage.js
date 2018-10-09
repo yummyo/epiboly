@@ -113,6 +113,8 @@ $(document).ready(function () {
                         var _v = getPageData(_fstaffNo);
                         var formObj = new Form();
                         formObj.init(_v);
+                        new setUpload($("#idCardParent"),{'uploadUrl':config['code_dataUpload'],"urlDom":$("#coverUrl"),'title':"封面"});
+                        new setUpload($("#businessParent"),{'uploadUrl':config['code_imgUpload'],"urlDom":$("#downloadUrl")});
                     }
                 }
 

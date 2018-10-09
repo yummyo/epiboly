@@ -127,8 +127,6 @@ function loadLaydate() {
     }
 }
 function _call(url, send, func, aSynSta) {
-    console.log(url)
-    console.log(url.indexOf('login'))
     if( url.indexOf('login') > -1 || checkToken()){
         let _token = getLocalData("_packet_info")['token'] || '';
         $.extend(send,{'token':_token})
@@ -202,7 +200,7 @@ function checkToken(){
         return true;
     }else{
         d_alert('错误','用户信息已过期，请重新登陆！','error',function () {
-            top.window.location.href = 'index.html';
+            top.window.location.href = '/page/index.html';
         });
         return false;
     }
