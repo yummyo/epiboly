@@ -272,7 +272,7 @@ function confirm_add_ok(res, url_back, func) {
             }
             else {
                 if (url_back != "") {
-                    window.location.href = url_back;
+                    window.location.href = "/page" + url_back;
                 }
             }
         });
@@ -795,6 +795,7 @@ class setUpload{
         this.DOM = DOM;
         this.option = $.extend(true,{},this.defaultOption,option);
         this.option.uploadUrl = 'http://47.92.251.237/admin' + this.option.uploadUrl;
+        // this.option.uploadUrl = api_base + this.option.uploadUrl;
         // this.option.uploadUrl = 'http://www.donzch.com:8080/upload/image';
         this.init();
     }
@@ -816,7 +817,7 @@ class setUpload{
         //成功提示
         _file.on('fileuploaded', function(event, data, msg) {
             if(that.option.urlDom && that.option.urlDom.length > 0){
-                that.option.urlDom.val(data['response']['downloadUrl'])
+                that.option.urlDom.val(data['response']['body']['downloadUrl'])
             }
         });
         // _file.fileinput('upload', function(event, data, msg) {
