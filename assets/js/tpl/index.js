@@ -5,7 +5,7 @@ $(function(){
         $("#userName").on("input",function(){
             $("#iframeCanvas")[0].contentWindow.inputChange($(this).val())
         })
-    })
+    });
     setCode();
     // $("#code").on('focus',function(){
     //     setCode();
@@ -41,7 +41,7 @@ function login(){
         _call("/login",sendObj,function(res){
             console.log(res)
             if(res.code == "1"){
-                window.location.href = "/main.html";
+                window.location.href = "/page/main.html";
             }else{
                 swal({
                     "title":"错误",
@@ -59,7 +59,4 @@ function login(){
             }
         })
     }
-    $.ajax({
-        'url':'http://47.92.251.237/admin/apk/query'
-    })
 }
