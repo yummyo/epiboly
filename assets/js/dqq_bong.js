@@ -90,7 +90,7 @@ function setTitle_01(title_list, title_page, url_add) {
 
     if ($(".d_add").length) {
         $(".d_add").on("click", function () {
-            getNowIframe().attr("src", url_add);
+            getNowIframe().attr("src","/page"+ url_add);
         });
     }
 }
@@ -101,7 +101,7 @@ function setTitle_02(title_add,_url){
     }
     if($(".d_back").length){
         $(".d_back").on("click",function(){
-            getNowIframe().attr("src",_url);
+            getNowIframe().attr("src","/page"+_url);
         });
     }
 }

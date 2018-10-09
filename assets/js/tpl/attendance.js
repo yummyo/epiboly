@@ -58,7 +58,7 @@ $(document).ready(function () {
                 $("#table_01 tbody").html(_trs);
 
                 $(".place").click(function(){
-                    getNowIframe().attr("src", config['url_add']+"?fattendanceNo="+$(this).attr("fattendanceNo"));
+                    getNowIframe().attr("src","/page"+ config['url_add']+"?fattendanceNo="+$(this).attr("fattendanceNo"));
                 })
                 //绑定删除事件
                 setDelete("fformalNo", config['code_delete']);
