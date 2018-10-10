@@ -122,7 +122,7 @@ $(document).ready(function () {
         //提交事件
         $(".validate-form .submit").on("click", function () {
             var _this = $(this);
-            if ($(".validate-form").valid()) {
+            if ($(".validate-form").validate().form()) {
                 sendObj2["slidePicName"] = $("#slidePicName").val();
                 sendObj2["slidePicDescribe"] = $("#slidePicDescribe").val();
                 sendObj2["clickUrl"] = $("#clickUrl").val();

@@ -143,7 +143,7 @@ $(document).ready(function () {
         //提交事件
         $(".validate-form .submit").on("click", function () {
             var _this = $(this);
-            if ($(".validate-form").valid()) {
+            if ($(".validate-form").validate().form()) {
                 sendObj2["fclassName"] = $("#fclassName").val();
                 sendObj2["fcollegeNo"] = $("#fcollegeNo").val();
                 sendObj2["fremark"] = $("#fremark").val();

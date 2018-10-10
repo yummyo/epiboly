@@ -37,13 +37,13 @@
 							<div class="col-sm-3">
 								<div class="form-group">
 									<label class='control-label valited-required' for="apkVersion">apk版本号</label>
-									<input type='text' class="form-control" id="apkVersion" name="apkVersion" placeholder="请输入apk版本号" title="请输入apk版本号" />
+									<input type='text' class="form-control" id="apkVersion" name="apkVersion" placeholder="请输入apk版本号(数字)" title="请输入apk版本号(数字)"  data-rule-required='true'/>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="form-group">
 									<label class='control-label valited-required' for="apkUrl">apkurl</label>
-									<input type='text' class="form-control" id="apkUrl" name="apkUrl" placeholder="请上传apk" title="请上传apk" />
+									<input type='text' class="form-control" id="apkUrl" name="apkUrl" placeholder="请上传apk" title="请上传apk"  data-rule-required='true'/>
 								</div>
 							</div>
 						</div>
@@ -61,7 +61,7 @@
 							</div>
 						</div>
 						<div class="text-center">
-							<button type="submit" class="btn btn-success">提交</button>
+							<button type="button" class="btn btn-success submit">提交</button>
 						</div>
 					</form>
 				</div>

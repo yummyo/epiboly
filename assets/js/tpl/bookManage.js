@@ -126,7 +126,7 @@ $(document).ready(function () {
         //提交事件
         $(".validate-form [type = submit]").on("click", function () {
             var _this = $(this);
-            if ($(".validate-form").valid()) {
+            if ($(".validate-form").validate().form()) {
                 sendObj2["bookCode"] = $("#bookCode").val();
                 sendObj2["bookName"] = $("#bookName").val();
                 sendObj2["bookDescribe"] = $("#bookDescribe").val();

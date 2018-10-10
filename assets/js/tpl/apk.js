@@ -119,7 +119,7 @@ $(document).ready(function () {
         //提交事件
         $(".validate-form .submit").on("click", function () {
             var _this = $(this);
-            if ($(".validate-form").valid()) {
+            if ($(".validate-form").validate().form()) {
                 sendObj2["apkVersion"] = $("#apkVersion").val();
                 sendObj2["apkUrl"] = $("#apkUrl").val();
                 sendObj2["apkDescribe"] = $("#apkDescribe").val();
