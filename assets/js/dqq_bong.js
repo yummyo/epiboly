@@ -788,8 +788,6 @@ class setUpload{
             maxFileCount: 1,
             showBrowse: false,
             browseOnZoneClick: true,
-            allowedPreviewTypes : [ 'image' ],
-            allowedFileExtensions : [ 'jpg', 'png', 'gif' ,'jpeg','JPG','PNG','GIF','JPEG'],
             initialPreviewShowDelete:false
         };
         this.DOM = DOM;
