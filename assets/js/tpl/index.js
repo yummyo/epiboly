@@ -30,7 +30,7 @@ function setCode(){
     })
 }
 function login(){
-    if($(".validate-form").valid()){
+    if($(".validate-form").validate().form()){
         $(".inputBody").addClass("test");
         let sendObj = {
             "username" : $("#userName").val(),

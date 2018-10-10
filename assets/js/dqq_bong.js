@@ -40,7 +40,7 @@ $(function(){
 //设置默认时间
 function setDefaultDate(_startDate, _endDate) {
     if (_startDate) {
-        _startDate.val(getTime(1) + " 00:00:00");
+        _startDate.val(getTime(1) + " 01:00:00");
     }
     if (_endDate) {
         _endDate.val(getTime(1) + " 23:59:59");

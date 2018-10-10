@@ -2054,6 +2054,7 @@
             self._mergeAjaxCallback('success', fnSuccess);
             self._mergeAjaxCallback('complete', fnComplete);
             self._mergeAjaxCallback('error', fnError);
+            self.formdata.append('token',JSON.parse(window.localStorage.getItem('_packet_info'))['token']);
             settings = $.extend(true, {}, {
                 xhr: function () {
                     var xhrobj = $.ajaxSettings.xhr();
