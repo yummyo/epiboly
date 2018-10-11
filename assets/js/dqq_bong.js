@@ -40,7 +40,7 @@ $(function(){
 //设置默认时间
 function setDefaultDate(_startDate, _endDate) {
     if (_startDate) {
-        _startDate.val(getTime(1) + " 00:00:00");
+        _startDate.val(getTime(1) + " 01:00:00");
     }
     if (_endDate) {
         _endDate.val(getTime(1) + " 23:59:59");
@@ -90,7 +90,7 @@ function setTitle_01(title_list, title_page, url_add) {
 
     if ($(".d_add").length) {
         $(".d_add").on("click", function () {
-            getNowIframe().attr("src", url_add);
+            getNowIframe().attr("src","/page"+ url_add);
         });
     }
 }
@@ -101,7 +101,7 @@ function setTitle_02(title_add,_url){
     }
     if($(".d_back").length){
         $(".d_back").on("click",function(){
-            getNowIframe().attr("src",_url);
+            getNowIframe().attr("src","/page"+_url);
         });
     }
 }
@@ -127,8 +127,6 @@ function loadLaydate() {
     }
 }
 function _call(url, send, func, aSynSta) {
-    console.log(url)
-    console.log(url.indexOf('login'))
     if( url.indexOf('login') > -1 || checkToken()){
         let _token = getLocalData("_packet_info")['token'] || '';
         $.extend(send,{'token':_token})
@@ -202,7 +200,7 @@ function checkToken(){
         return true;
     }else{
         d_alert('错误','用户信息已过期，请重新登陆！','error',function () {
-            top.window.location.href = 'index.html';
+            top.window.location.href = '/page/index.html';
         });
         return false;
     }
@@ -274,7 +272,7 @@ function confirm_add_ok(res, url_back, func) {
             }
             else {
                 if (url_back != "") {
-                    window.location.href = url_back;
+                    window.location.href = "/page" + url_back;
                 }
             }
         });
@@ -790,13 +788,12 @@ class setUpload{
             maxFileCount: 1,
             showBrowse: false,
             browseOnZoneClick: true,
-            allowedPreviewTypes : [ 'image' ],
-            allowedFileExtensions : [ 'jpg', 'png', 'gif' ,'jpeg','JPG','PNG','GIF','JPEG'],
             initialPreviewShowDelete:false
         };
         this.DOM = DOM;
         this.option = $.extend(true,{},this.defaultOption,option);
         this.option.uploadUrl = 'http://47.92.251.237/admin' + this.option.uploadUrl;
+        // this.option.uploadUrl = api_base + this.option.uploadUrl;
         // this.option.uploadUrl = 'http://www.donzch.com:8080/upload/image';
         this.init();
     }
@@ -818,7 +815,7 @@ class setUpload{
         //成功提示
         _file.on('fileuploaded', function(event, data, msg) {
             if(that.option.urlDom && that.option.urlDom.length > 0){
-                that.option.urlDom.val(data['response']['downloadUrl'])
+                that.option.urlDom.val(data['response']['body']['downloadUrl'])
             }
         });
         // _file.fileinput('upload', function(event, data, msg) {

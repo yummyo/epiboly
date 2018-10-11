@@ -5,7 +5,7 @@ $(function(){
         $("#userName").on("input",function(){
             $("#iframeCanvas")[0].contentWindow.inputChange($(this).val())
         })
-    })
+    });
     setCode();
     // $("#code").on('focus',function(){
     //     setCode();
@@ -30,7 +30,7 @@ function setCode(){
     })
 }
 function login(){
-    if($(".validate-form").valid()){
+    if($(".validate-form").validate().form()){
         $(".inputBody").addClass("test");
         let sendObj = {
             "username" : $("#userName").val(),
@@ -59,7 +59,4 @@ function login(){
             }
         })
     }
-    $.ajax({
-        'url':'http://47.92.251.237/admin/apk/query'
-    })
 }

@@ -113,6 +113,8 @@ $(document).ready(function () {
                         var _v = getPageData(_fstaffNo);
                         var formObj = new Form();
                         formObj.init(_v);
+                        new setUpload($("#idCardParent"),{'uploadUrl':config['code_dataUpload'],"urlDom":$("#coverUrl"),'title':"封面"});
+                        new setUpload($("#businessParent"),{'uploadUrl':config['code_imgUpload'],"urlDom":$("#downloadUrl")});
                     }
                 }
 
@@ -124,7 +126,7 @@ $(document).ready(function () {
         //提交事件
         $(".validate-form [type = submit]").on("click", function () {
             var _this = $(this);
-            if ($(".validate-form").valid()) {
+            if ($(".validate-form").validate().form()) {
                 sendObj2["bookCode"] = $("#bookCode").val();
                 sendObj2["bookName"] = $("#bookName").val();
                 sendObj2["bookDescribe"] = $("#bookDescribe").val();

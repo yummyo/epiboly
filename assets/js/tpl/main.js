@@ -2,7 +2,7 @@
 $(function(){
     if(!checkUserInfo()){
         d_alert('错误',"用户信息已过期!",'error');
-        window.location.href = "/index.html";
+        window.location.href = "/page/index.html";
     }else{
 
     }
@@ -20,7 +20,7 @@ $(".closeModal").click(function(){
     getMainDom("hide");
 })
 $("#loginOut").click(()=>{
-    window.location.href = "/index.html";
+    window.location.href = "/page/index.html";
 })
 class setIcon {
     constructor(data){

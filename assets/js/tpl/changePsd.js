@@ -16,7 +16,7 @@ $(function(){
         },500)
     })
     $(".submit").click(()=>{
-        if ($(".validate-form").valid()) {
+        if ($(".validate-form").validate().form()) {
             let sendObj = {
                 "oldpwd" : $("#oldPassword").val(),
                 "newpwd" : $("#newPassword").val()

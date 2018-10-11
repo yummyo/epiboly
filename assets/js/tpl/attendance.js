@@ -58,7 +58,7 @@ $(document).ready(function () {
                 $("#table_01 tbody").html(_trs);
 
                 $(".place").click(function(){
-                    getNowIframe().attr("src", config['url_add']+"?fattendanceNo="+$(this).attr("fattendanceNo"));
+                    getNowIframe().attr("src","/page"+ config['url_add']+"?fattendanceNo="+$(this).attr("fattendanceNo"));
                 })
                 //绑定删除事件
                 setDelete("fformalNo", config['code_delete']);
@@ -141,7 +141,7 @@ $(document).ready(function () {
         //提交事件
         $(".validate-form .submit").on("click", function () {
             var _this = $(this);
-            if ($(".validate-form").valid()) {
+            if ($(".validate-form").validate().form()) {
                 sendObj2["pictureList"] = pictureList;
                 _call(_default.get_msgId(), sendObj2, function (res) {
                     confirm_add_ok(res, config['url_page'], function () {
