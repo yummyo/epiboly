@@ -21,12 +21,14 @@ $(function(){
     })
 })
 //获取验证码
-function setCode(){
+function setCode(type){
     var _random = new Date().getTime();
     var _src = api_base + "/code?random=" + _random;
     $(".img_code").html("<img src='" + _src + "' width='100' height='38' onclick='setCode();' random='" + _random + "' />");
     $(".img_code img").load(function(){
-        $("#code").focus();
+        if(type){
+            $("#code").focus().select();
+        }
     })
 }
 function login(){
@@ -52,7 +54,7 @@ function login(){
                 }).then(function (isConfirm) {
                     if (isConfirm === true) {
                         $(".inputBody").removeClass("test");
-                        setCode();
+                        setCode(true);
                     }
                 });
                 // d_alert("错误",res.staInfo,"error");

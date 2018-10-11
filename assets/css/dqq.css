@@ -472,7 +472,7 @@ textarea{
 	height: 100%;
 }
 #table_01{
-	table-layout: fixed;
+	/*table-layout: fixed;*/
 }
 .title{
 	width:10%;

@@ -33,7 +33,7 @@ $(document).ready(function () {
         //加载事件
         var _trs, _pageSize, _pageCount;
         var setData = function (pIndex, pSize) {
-            pIndex = pIndex || 0;
+            pIndex = pIndex || 1;
             pSize = pSize || 20;
             var pageSetBody = { "pageNo": pIndex, "pageSize": pSize };
             var sendObj = {

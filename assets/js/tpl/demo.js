@@ -20,7 +20,7 @@ $(document).ready(function () {
         //加载事件
         var _trs, _pageSize, _pageCount;
         var setData = function (pIndex, pSize) {
-            pIndex = pIndex || 0;
+            pIndex = pIndex || 1;
             pSize = pSize || 20;
             var pageSetBody = { "pageNo": pIndex, "pageSize": pSize };
             var sendObj = {
@@ -29,14 +29,14 @@ $(document).ready(function () {
             };
             _call(config['code_list'], sendObj, function (res) {
                 _trs = "";
-                if (!res.msgBody) {
+                if (!res.body || res.body.length == 0) {
                     _trs = "";
                     _pageSize = 1;
                     _pageCount = 1;
                 }
                 else {
-                    _pageSize = res.msgBody.pageOutBody.pageSize;
-                    _pageCount = res.msgBody.pageOutBody.count;
+                    _pageSize = res.body.pageSize;
+                    _pageCount = res.body.count;
                     $.each(res.body, function (i, v) {
                         _trs = _trs + "<tr><td>" + (i + 1) + "</td><td>" + v.frealName + "</td><td>" + v.fmobile + "</td><td>" + v.fidcardNo + "</td><td>" + v.flicenseTypeName + "</td><td>" + v.fstaffTypeName + "</td><td>" + v.fdepartmentNames + "</td><td>" + getFormatDate(1, v.fzgzdqDate) + "</td><td>" + getText_fisAbled(v.fisAbled, 1) + "</td><td>" + getTdOperate(6, config['url_add'], v.fid, "fstaffNo", v.fstaffNo) + "</td></tr>";
                     });

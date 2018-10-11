@@ -7,7 +7,7 @@ $(function(){
 
     }
     //每页查询data数据存放
-    window.localStorage.setItem('pageData',"");
+    window.localStorage.setItem('pageData',"{}");
     $(".Hui-aside").Huifold({
         titCell:'.menu_dropdown dl dt',
         mainCell:'.menu_dropdown dl dd',

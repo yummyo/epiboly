@@ -90,7 +90,7 @@ function setTitle_01(title_list, title_page, url_add) {
 
     if ($(".d_add").length) {
         $(".d_add").on("click", function () {
-            getNowIframe().attr("src","/page"+ url_add);
+            getNowIframe().attr("src",url_add);
         });
     }
 }
@@ -101,7 +101,7 @@ function setTitle_02(title_add,_url){
     }
     if($(".d_back").length){
         $(".d_back").on("click",function(){
-            getNowIframe().attr("src","/page"+_url);
+            getNowIframe().attr("src",_url);
         });
     }
 }
@@ -233,25 +233,8 @@ function getTdOperate(_type, url_add, fid, key, key_field, key1, key_field1) {
     var _signIn = "<a class='btn btn-success btn-mini signIn' href='javascript:void(0);' title='签到' " + key + "='" + key_field + "'" + key1 + "='" + key_field1 + "'>签到</a>";
     var _audit = "<a class='btn btn-success btn-mini audit' href='javascript:void(0);' title='审批' " + key + "='" + key_field + "'>审批</a>";
 
-    if (_type == 1) {
-        return _add;
-    }
-    else if (_type == 2) {
-        return _edit + "&nbsp;" + _del;
-    }
-    else if (_type == 3) {
-        return _edit;
-    }
-    else if (_type == 4) {
-        return _place;
-    }
-    else if (_type == 5) {
-        //正式课程 二维码
-        return  _signIn + "&nbsp;" + _del;
-    }
-    else if (_type == 6) {
-        //审批请假
-        return  _audit;
+    if (_type == 6) {
+        return  _edit;
     }
 }
 function confirm_add_ok(res, url_back, func) {
@@ -825,15 +808,22 @@ class setUpload{
 }
 //设置查询数据
 function setPageData(data){
-    let _storge = getLocalData('pageData');
-    if(_storge){
-        _storge[page] = data;
+    console.log(data)
+    let _storge = window.localStorage.getItem('pageData');
+    if(_storge != null && _storge != undefined){
+        _storge = JSON.parse(_storge);
+        let Obj = {};
+        $.each(data,(i,v)=>{
+            Obj[v['id']] = v;
+        })
+        _storge[_page] = Obj;
+        window.localStorage.setItem('pageData',JSON.stringify(_storge));
     }
 }
 //根据id获取对应税局
 function getPageData(id){
     let _storge = getLocalData('pageData');
-    if(_storge && _storge[page.split("_")[0]]){
-        return _storge[page.split("_")[0]][id]
+    if(_storge && _storge[_page.split("_")[0]]){
+        return _storge[_page.split("_")[0]][id]
     }
 }

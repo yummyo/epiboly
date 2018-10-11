@@ -9,7 +9,7 @@ var config = {
     code_list: "/apk/query",
     code_delete: "/apk/del",
     code_add: "/apk/add",
-    code_edit: "/apk/alter",
+    code_edit: "/apk/update",
     code_upload: "/apk/upload",
     pagination_01: $("#page_01")
 };
@@ -20,7 +20,7 @@ $(document).ready(function () {
         //加载事件
         var _trs, _pageSize, _pageCount;
         var setData = function (pIndex, pSize) {
-            pIndex = pIndex || 0;
+            pIndex = pIndex || 1;
             pSize = pSize || 20;
             var pageSetBody = { "pageNo": pIndex, "pageSize": pSize };
             var sendObj = {
@@ -31,14 +31,14 @@ $(document).ready(function () {
             $.extend(sendObj,pageSetBody);
             _call(config['code_list'], sendObj, function (res) {
                 _trs = "";
-                if (!res.msgBody) {
+                if (!res.body || res.body.length == 0) {
                     _trs = "";
                     _pageSize = 1;
                     _pageCount = 1;
                 }
                 else {
-                    _pageSize = res.msgBody.pageOutBody.pageSize;
-                    _pageCount = res.msgBody.pageOutBody.count;
+                    _pageSize = res.body.pageSize;
+                    _pageCount = res.body.count;
                     $.each(res.body, function (i, v) {
                         _trs = _trs + `<tr>
                             <td>${i+1}</td>
@@ -74,7 +74,7 @@ $(document).ready(function () {
         //初始化
         var PageInit = function () {
             var _fid = $.trim($.request.queryString["fid"]);
-            var _fstaffNo = $.trim($.request.queryString["fstaffNo"]);
+            var _fstaffNo = $.trim($.request.queryString["id"]);
             var _rtype = $.trim($.request.queryString["rtype"]);
             var _msgId = 0;
             this.get_fid = function () {

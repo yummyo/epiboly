@@ -1311,7 +1311,8 @@ $.extend( $.validator, {
 });
 
 $.format = function deprecated() {
-	throw "$.format has been deprecated. Please use $.validator.format instead.";
+	// throw "$.format has been deprecated. Please use $.validator.format instead.";
+	// console.log("$.format has been deprecated. Please use $.validator.format instead.");
 };
 
 // ajax mode: abort

@@ -44,9 +44,9 @@
 	<script src='/page/assets/js/boot/bootstrap.min.js' type='text/javascript'></script>
 	<script src="/page/assets/js/dqq_bong.js"></script>
 	<script>
-		let userInfo = JSON.parse(window.localStorage.getItem("tokenInfo"));
-		console.log(userInfo)
+		let userInfo = window.localStorage.getItem("tokenInfo");
 		if(userInfo){
+            userInfo = JSON.parse(userInfo);
 		    $(".userName").text(userInfo.realName);
 		}
         $(".nowTime").text(new Date().Format("yyyy-MM-dd hh:mm:ss"))
