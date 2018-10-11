@@ -15,11 +15,7 @@
 	}
     var api_base=getApiBase();
     //本地跨域代理
-<<<<<<< HEAD
     api_base += "/admin";
-=======
-    // api_base += "/apis/admin";
->>>>>>> 1b902a2af2369aaee90b1c1a0f96538982e7078e
     //生产环境
     api_base = "http://47.92.251.237/admin";
 
