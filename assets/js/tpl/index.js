@@ -41,7 +41,7 @@ function login(){
         _call("/login",sendObj,function(res){
             console.log(res)
             if(res.code == "1"){
-                window.location.href = "/main.html";
+                window.location.href = "/page/main.html";
             }else{
                 swal({
                     "title":"错误",

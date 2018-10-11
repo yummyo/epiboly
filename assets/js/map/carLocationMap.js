@@ -7,7 +7,7 @@ var map, route, marker;
 var url = "";
 // 线路执行监听器
 var routeCompleteListener=null;
-var siteLogo=api_base+'/assets/images/siteLogo.png',siteLogo1=api_base+'/assets/images/siteLogol.png',carlogo=api_base+'/assets/images/car.png';
+var siteLogo=api_base+'/page/assets/images/siteLogo.png',siteLogo1=api_base+'/page/assets/images/siteLogol.png',carlogo=api_base+'/page/assets/images/car.png';
 
 // sites站点对象集合 ,getsta=0 获取站点和车辆信息的状态 1 只能获取到站点 2 站点和车辆都获取到 ,carinfo 车辆信息 ,carPosition 运单最新位置,lastcarPosition 车辆最后一次的位置;
 var sites,getsta=0,carinfo,carPositionMarker,lastcarPosition;

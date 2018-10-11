@@ -592,7 +592,7 @@ class setClassTable{
                 let clickValue = JSON.parse($(this).find("input").val());
                 //如果是签到页面  点击td弹出模态框
                 $("#signInModal").modal('show');
-                qrCode.makeCode(_url+"/tpl/wechat/userSignIn.html?fformalNo="+clickValue["fformalNo"]+"&fteacherNo="+clickValue["fteacherNo"]);
+                qrCode.makeCode(_url+"/page/tpl/wechat/userSignIn.html?fformalNo="+clickValue["fformalNo"]+"&fteacherNo="+clickValue["fteacherNo"]);
             }
 
         })

@@ -57,7 +57,7 @@ class setIcon {
                 //业务需求 单击计划课程时，先查询班级信息
                 if(v.fmenuName == "计划课程"){
                     that.secondList[_name] += `
-                        <li><a data-href="/tpl/classInfo.html?page=planCourse" data-title="${v.fmenuName}" href="javascript:void(0)">${v.fmenuName}</a></li>
+                        <li><a data-href="/page/tpl/classInfo.html?page=planCourse" data-title="${v.fmenuName}" href="javascript:void(0)">${v.fmenuName}</a></li>
                     `;
                 }else{
                     that.secondList[_name] += `
