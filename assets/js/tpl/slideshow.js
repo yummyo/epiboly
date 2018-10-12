@@ -98,7 +98,7 @@ $(document).ready(function () {
                     this.set_msgId(config['code_add']);
                     this.set_fid(0);
                     setTitle_02(config['title_add'],config['url_page']);
-                    new setUpload($("#idCardParent"),{'uploadUrl':config['code_upload'],"urlDom":$("#apkurl")});
+                    new setUpload($("#idCardParent"),{'uploadUrl':config['code_upload'],"urlDom":$("#url")});
                 }
                 else if (_fid != "" && _fstaffNo != "" && _rtype == "edit") {
                     //修改
@@ -110,7 +110,7 @@ $(document).ready(function () {
                         var _v = getPageData(_fstaffNo);
                         var formObj = new Form();
                         formObj.init(_v);
-                        new setUpload($("#idCardParent"),{'uploadUrl':config['code_upload'],"urlDom":$("#apkurl")});
+                        new setUpload($("#idCardParent"),{'uploadUrl':config['code_upload'],"urlDom":$("#url")});
                     }
                 }
 

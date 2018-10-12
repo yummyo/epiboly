@@ -803,10 +803,13 @@ class setUpload{
                 }
             }else{
                 d_alert('错误',data['response']['info'],'error',function(){
-                    $(".kv-file-remove").click();
+                    that.DOM.find(".kv-file-remove").click();
                 });
             }
 
+        });
+        _file.on("filebatchselected", function(event, files) {
+            _file.fileinput("upload");
         });
         // _file.fileinput('upload', function(event, data, msg) {
         //     console.log(event, data, msg)
