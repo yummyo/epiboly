@@ -766,7 +766,7 @@ class setUpload{
                 indicatorErrorTitle: 'Upload Error',
                 indicatorLoadingTitle: 'Uploading ...'
             },
-            uploadUrl: "",
+            uploadUrl: config['code_upload'],
             uploadAsync: true,
             maxFileCount: 1,
             showBrowse: false,
@@ -797,9 +797,16 @@ class setUpload{
         });
         //成功提示
         _file.on('fileuploaded', function(event, data, msg) {
-            if(that.option.urlDom && that.option.urlDom.length > 0){
-                that.option.urlDom.val(data['response']['body']['downloadUrl'])
+            if(data['response']['code'] == 1){
+                if(that.option.urlDom && that.option.urlDom.length > 0){
+                    that.option.urlDom.val(data['response']['body']['downloadUrl'])
+                }
+            }else{
+                d_alert('错误',data['response']['info'],'error',function(){
+                    $(".kv-file-remove").click();
+                });
             }
+
         });
         // _file.fileinput('upload', function(event, data, msg) {
         //     console.log(event, data, msg)
