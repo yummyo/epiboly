@@ -580,4 +580,4 @@ $("#input").on('input propertychange', function (_ref12) {
     // }
 });
 shape.init();
-shape.print('Hello World！');
+shape.print('图书管理');

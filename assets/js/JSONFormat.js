@@ -15,9 +15,9 @@
 	}
     var api_base=getApiBase();
     //本地跨域代理
-    api_base += "/admin";
+    api_base += "/apis/admin";
     //生产环境
-    api_base = "http://47.92.251.237/admin";
+    // api_base = "http://47.92.251.237/admin";
 
 	function ajaxcallAPI(url,sendObj,onSuccess,onTimeout,onError,headerObj,aSynSta){
 		//加载框
