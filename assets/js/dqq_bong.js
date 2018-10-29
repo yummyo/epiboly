@@ -255,7 +255,7 @@ function confirm_add_ok(res, url_back, func) {
             }
             else {
                 if (url_back != "") {
-                    window.location.href = "/page" + url_back;
+                    window.location.href = url_back;
                 }
             }
         });

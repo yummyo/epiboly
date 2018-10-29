@@ -44,7 +44,6 @@ $(document).ready(function () {
                             <td>${i+1}</td>
                             <td>${v['userName']}</td>
                             <td>${v['tel']}</td>
-                            <td>${v['apkUrl']}</td>
                             <td>${v['content']}</td>
                             <td>${v['createTime']}</td>
                             <td>${getTdOperate(6, config['url_add'], v.id, "id", v.id)}</td>

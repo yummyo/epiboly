@@ -47,7 +47,7 @@ $(document).ready(function () {
                             <td>${v['slidePicDescribe']}</td>
                             <td>${v['url']}</td>
                             <td>${v['clickUrl']}</td>
-                            <td>${v['isShow']}</td>
+                            <td>${v['isShow'] == 1 ? "展示" : "隐藏"}</td>
                             <td>${getTdOperate(6, config['url_add'], v.id, "id", v.id)}</td>
                         </tr>`;
                     });
@@ -105,7 +105,7 @@ $(document).ready(function () {
                     this.set_msgId(config['code_edit']);
                     this.set_fid(_fid);
                     setTitle_02(config['title_edit'],config['url_page']);
-                    sendObj2['fid'] = _fid;
+                    sendObj2['id'] = _fid;
                     if (getPageData(_fstaffNo)) {
                         var _v = getPageData(_fstaffNo);
                         var formObj = new Form();

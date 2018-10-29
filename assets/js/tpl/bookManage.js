@@ -107,7 +107,7 @@ $(document).ready(function () {
                     this.set_msgId(config['code_edit']);
                     this.set_fid(_fid);
                     setTitle_02(config['title_edit'],config['url_page']);
-                    sendObj2['fid'] = _fid;
+                    sendObj2['id'] = _fid;
 
                     if (getPageData(_fstaffNo)) {
                         var _v = getPageData(_fstaffNo);

@@ -104,7 +104,7 @@ $(document).ready(function () {
                     this.set_msgId(config['code_edit']);
                     this.set_fid(_fid);
                     setTitle_02(config['title_edit'],config['url_page']);
-                    sendObj2['fid'] = _fid;
+                    sendObj2['id'] = _fid;
 
                     if (getPageData(_fstaffNo)) {
                         var _v = getPageData(_fstaffNo);
@@ -126,8 +126,7 @@ $(document).ready(function () {
                 sendObj2["firmwareVersion"] = $("#firmwareVersion").val();
                 sendObj2["firmwareType"] = $("#firmwareType").val();
                 sendObj2["firmwareDescribe"] = $("#firmwareDescribe").val();
-                sendObj2["coverUrl"] = $("#coverUrl").val();
-                sendObj2["downloadUrl"] = $("#downloadUrl").val();
+                sendObj2["firmwareUrl"] = $("#firmwareUrl").val();
                 _call(_default.get_msgId(), sendObj2, function (res) {
                     confirm_add_ok(res, config['url_page'], function () {
                         window.location.href = window.location.href;

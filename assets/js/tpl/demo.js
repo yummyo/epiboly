@@ -93,7 +93,7 @@ $(document).ready(function () {
                     this.set_msgId(config['code_edit']);
                     this.set_fid(_fid);
                     setTitle_02(config['title_edit'],config['url_page']);
-                    sendObj2['fid'] = _fid;
+                    sendObj2['id'] = _fid;
 
                     //加载数据
                     var sendObj = {
