@@ -45,7 +45,7 @@ $(document).ready(function () {
                             <td>${v['userName']}</td>
                             <td>${v['tel']}</td>
                             <td>${v['content']}</td>
-                            <td>${v['createTime']}</td>
+                            <td>${changeTime(v['createTime'])}</td>
                             <td>${getTdOperate(6, config['url_add'], v.id, "id", v.id)}</td>
                         </tr>`;
                     });
@@ -72,3 +72,9 @@ $(document).ready(function () {
     }
     // $(".select2").select2();
 });
+function changeTime(time){
+    if(time){
+        return new Date(time).Format('yyyy-MM-dd hh:mm:ss')
+    }
+    return "--";
+}
