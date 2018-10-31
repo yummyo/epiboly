@@ -226,7 +226,7 @@ function getUserInfo(t) {
 //按钮增加
 function getTdOperate(_type, url_add, fid, key, key_field, key1, key_field1) {
     var _add = "<a href='" + url_add + "?fid=" + fid + "&" + key + "=" + key_field + "' class='btn btn-success btn-mini' href='javascript:void(0);' title='添加'>添加</a>";
-    var _edit = "<a href='" + url_add + "?fid=" + fid + "&" + key + "=" + key_field + "&rtype=edit' class='btn btn-primary btn-mini' href='javascript:void(0);' title='修改'>修改</a>";
+    var _edit = "<a href='" + url_add + "?fid=" + fid + "&" + key + "=" + key_field + "&rtype=edit' class='btn btn-primary btn-mini edit' href='javascript:void(0);' title='修改'>修改</a>";
     var _del = "<a class='btn btn-danger btn-mini del' href='javascript:void(0);' title='删除' fid='" + fid + "' " + key + "='" + key_field + "'>删除</a>";
     var _view = "<a class='btn btn-success btn-mini view' href='javascript:void(0);' title='查看' " + key + "='" + key_field + "'>查看</a>";
     var _place = "<a class='btn btn-success btn-mini place' href='javascript:void(0);' title='定位' " + key + "='" + key_field + "'>定位</a>";
@@ -234,7 +234,7 @@ function getTdOperate(_type, url_add, fid, key, key_field, key1, key_field1) {
     var _audit = "<a class='btn btn-success btn-mini audit' href='javascript:void(0);' title='审批' " + key + "='" + key_field + "'>审批</a>";
 
     if (_type == 6) {
-        return  _edit;
+        return  _edit +"&nbsp;"+ _del;
     }
 }
 function confirm_add_ok(res, url_back, func) {
@@ -268,15 +268,14 @@ function confirm_add_ok(res, url_back, func) {
 function setDelete(_key, _code) {
     $(".del").on("click", function () {
         var _this = $(this);
-        var _fcompanyId = getUserInfo(0).fcompanyId;
         dqq_confirm("确定要删除吗？", function () {
-            eval("var sendObj={" + _key + ":'" + _this.attr(_key) + "',fcompanyId:" + _fcompanyId + "}");
-            _call(_code, {"msgBody":sendObj}, function (res) {
+            eval("var sendObj={" + _key + ":'" + _this.attr(_key) + "'}");
+            _call(_code, sendObj, function (res) {
                 var notice_type = "error";
-                if (res.sta == "ok") {
+                if (res.code == 1) {
                     notice_type = "success"
                 }
-                d_alert("提示", res.staInfo, notice_type);
+                d_alert("提示", res.info, notice_type);
                 _this.parents("tr").remove();
             });
         })
@@ -836,4 +835,11 @@ function getPageData(id){
     if(_storge && _storge[_page.split("_")[0]]){
         return _storge[_page.split("_")[0]][id]
     }
+}
+// 渲染数据时检查是否有空值
+function dataIsNull(data){
+    if(data != 'null' && data != 'undefined' && data != null && data != undefined){
+        return data
+    }
+    return '--';
 }

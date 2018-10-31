@@ -55,7 +55,7 @@ $(document).ready(function () {
                 $("#table_01 tbody").html(_trs);
 
                 //绑定删除事件
-                setDelete("fstaffNo", config['code_delete']);
+                setDelete("id", config['code_delete']);
 
                 //分页方法
                 setPagination(config['pagination_01'], _pageSize, _pageCount, setData);
@@ -66,7 +66,7 @@ $(document).ready(function () {
             //初始化加载数据
             setData();
         }
-        // loadingAll();
+        loadingAll();
 
         //查询方法
         setSearch(config['pagination_01'], loadingAll);

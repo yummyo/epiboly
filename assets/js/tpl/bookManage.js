@@ -30,6 +30,10 @@ $(document).ready(function () {
                 "startTime": $("#startTime").val(),
                 "endTime": $("#endTime").val(),
             };
+            // window.localStorage.setItem(_page+"data",JSON.stringify({
+            //     'sendObj':sendObj,
+            //     'pageSetBody':pageSetBody
+            // }));
             $.extend(sendObj,pageSetBody);
             _call(config['code_list'], sendObj, function (res) {
                 _trs = "";
@@ -44,11 +48,11 @@ $(document).ready(function () {
                     $.each(res.body, function (i, v) {
                         _trs = _trs + `<tr>
                             <td>${i+1}</td>
-                            <td>${v['bookCode']}</td>
-                            <td>${v['bookName']}</td>
-                            <td>${v['coverUrl']}</td>
-                            <td>${v['downloadUrl']}</td>
-                            <td>${v['bookDescribe']}</td>
+                            <td>${dataIsNull(v['bookCode'])}</td>
+                            <td>${dataIsNull(v['bookName'])}</td>
+                            <td>${dataIsNull(v['coverUrl'])}</td>
+                            <td>${dataIsNull(v['downloadUrl'])}</td>
+                            <td>${dataIsNull(v['bookDescribe'])}</td>
                             <td>${getTdOperate(6, config['url_add'], v.id, "id", v.id)}</td>
                         </tr>`;
                     });
@@ -68,7 +72,7 @@ $(document).ready(function () {
             //初始化加载数据
             setData();
         }
-        // loadingAll();
+        loadingAll();
 
         //查询方法
         setSearch(config['pagination_01'], loadingAll);
