@@ -10,8 +10,8 @@ var config = {
     code_delete: "/book/del",
     code_add: "/book/add",
     code_edit: "/book/update",
-    code_dataUpload: "/book/upload",
-    code_imgUpload: "/book/coverUpload",
+    code_dataUpload: "/book/coverUpload",
+    code_imgUpload: "/book/upload",
     pagination_01: $("#page_01")
 };
 $(document).ready(function () {
@@ -30,10 +30,10 @@ $(document).ready(function () {
                 "startTime": $("#startTime").val(),
                 "endTime": $("#endTime").val(),
             };
-            // window.localStorage.setItem(_page+"data",JSON.stringify({
-            //     'sendObj':sendObj,
-            //     'pageSetBody':pageSetBody
-            // }));
+            window.sessionStorage.setItem(_page+"data",JSON.stringify({
+                'sendObj':sendObj,
+                'pageSetBody':pageSetBody
+            }));
             $.extend(sendObj,pageSetBody);
             _call(config['code_list'], sendObj, function (res) {
                 _trs = "";
@@ -72,8 +72,7 @@ $(document).ready(function () {
             //初始化加载数据
             setData();
         }
-        loadingAll();
-
+        autoSearchByCookie(loadingAll);
         //查询方法
         setSearch(config['pagination_01'], loadingAll);
     }
@@ -103,7 +102,7 @@ $(document).ready(function () {
                     this.set_msgId(config['code_add']);
                     this.set_fid(0);
                     setTitle_02(config['title_add'],config['url_page']);
-                    new setUpload($("#idCardParent"),{'uploadUrl':config['code_dataUpload'],"urlDom":$("#coverUrl"),'title':"封面"});
+                    new setUpload($("#idCardParent"),{'uploadUrl':config['code_dataUpload'],"urlDom":$("#coverUrl"),'title':"封面",'responseUrl':"coverUrl"});
                     new setUpload($("#businessParent"),{'uploadUrl':config['code_imgUpload'],"urlDom":$("#downloadUrl")})
                 }
                 else if (_fid != "" && _fstaffNo != "" && _rtype == "edit") {

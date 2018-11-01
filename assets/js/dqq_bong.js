@@ -101,7 +101,7 @@ function setTitle_02(title_add,_url){
     }
     if($(".d_back").length){
         $(".d_back").on("click",function(){
-            getNowIframe().attr("src",_url);
+            getNowIframe().attr("src",_url+"?pageType=search");
         });
     }
 }
@@ -798,7 +798,7 @@ class setUpload{
         _file.on('fileuploaded', function(event, data, msg) {
             if(data['response']['code'] == 1){
                 if(that.option.urlDom && that.option.urlDom.length > 0){
-                    that.option.urlDom.val(data['response']['body']['downloadUrl'])
+                    that.option.urlDom.val(data['response']['body'][that.option['responseUrl'] || 'downloadUrl'])
                 }
             }else{
                 d_alert('错误',data['response']['info'],'error',function(){
@@ -842,4 +842,18 @@ function dataIsNull(data){
         return data
     }
     return '--';
+}
+// 查询条件重新赋值
+function autoSearchByCookie(fun){
+    let storage = window.sessionStorage.getItem(_page+"data");
+    if(storage && $.request.queryString["pageType"]){
+        //如果缓存存在 并且是通过返回按钮返回 将查询条件重新赋值
+        storage = JSON.parse(storage);
+        $.each(storage['sendObj'],(i,v)=>{
+            $("#"+i).val(v);
+    })
+        fun(storage['pageSetBody']['pageNo'],storage['pageSetBody']['pageSize'])
+    }else{
+        fun()
+    }
 }

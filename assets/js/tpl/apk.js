@@ -28,6 +28,10 @@ $(document).ready(function () {
                 "startTime": $("#startTime").val(),
                 "endTime": $("#endTime").val(),
             };
+            window.sessionStorage.setItem(_page+"data",JSON.stringify({
+                'sendObj':sendObj,
+                'pageSetBody':pageSetBody
+            }));
             $.extend(sendObj,pageSetBody);
             _call(config['code_list'], sendObj, function (res) {
                 _trs = "";
@@ -64,7 +68,7 @@ $(document).ready(function () {
             //初始化加载数据
             setData();
         }
-        loadingAll();
+        autoSearchByCookie(loadingAll);
 
         //查询方法
         setSearch(config['pagination_01'], loadingAll);

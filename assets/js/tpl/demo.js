@@ -55,7 +55,7 @@ $(document).ready(function () {
             //初始化加载数据
             setData();
         }
-        loadingAll();
+        autoSearchByCookie(loadingAll);
 
         //查询方法
         setSearch(config['pagination_01'], loadingAll);
