@@ -127,7 +127,7 @@ $(document).ready(function () {
         _default.setDefault();
 
         //提交事件
-        $(".validate-form [type = submit]").on("click", function () {
+        $(".validate-form .submit").on("click", function () {
             var _this = $(this);
             if ($(".validate-form").validate().form()) {
                 sendObj2["bookCode"] = $("#bookCode").val();
