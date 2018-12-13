@@ -817,7 +817,6 @@ class setUpload{
 }
 //设置查询数据
 function setPageData(data){
-    console.log(data)
     let _storge = window.localStorage.getItem('pageData');
     if(_storge != null && _storge != undefined){
         _storge = JSON.parse(_storge);

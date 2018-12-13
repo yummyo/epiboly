@@ -16,6 +16,7 @@ var config = {
 };
 $(document).ready(function () {
     if (_page == "bookManage") {
+        var pageNo = 1;
         setTitle_01(config['title_list'], config['title_page'], config['url_add']);
         setDefaultDate($("#startTime"),$("#endTime"))
         //加载事件
@@ -41,6 +42,8 @@ $(document).ready(function () {
                     _trs = "";
                     _pageSize = 1;
                     _pageCount = 1;
+                    pageNo--
+                    d_alert('警告','没有更多数据啦！','warning')
                 }
                 else {
                     _pageSize = res.body.pageSize;
@@ -57,14 +60,13 @@ $(document).ready(function () {
                         </tr>`;
                     });
                     setPageData(res.body);
+                    $("#table_01 tbody").html(_trs);
                 }
-                $("#table_01 tbody").html(_trs);
 
                 //绑定删除事件
                 setDelete("id", config['code_delete']);
 
                 //分页方法
-                setPagination(config['pagination_01'], _pageSize, _pageCount, setData);
             });
         };
 
@@ -72,9 +74,27 @@ $(document).ready(function () {
             //初始化加载数据
             setData();
         }
+
         autoSearchByCookie(loadingAll);
         //查询方法
-        setSearch(config['pagination_01'], loadingAll);
+        loadingAll();
+        $(".homePage").click(function(){
+            pageNo = 1
+            setData(pageNo)
+        })
+        $(".prevPage").click(function(){
+            if(pageNo > 1){
+                pageNo--
+                setData(pageNo)
+            }else{
+                d_alert("警告",'已经到头啦！','warning')
+            }
+            
+        })
+        $(".nextPage").click(function(){
+            pageNo++
+            setData(pageNo)
+        })
     }
     else if (_page == "bookManage_add") {
         var sendObj2 = {};
